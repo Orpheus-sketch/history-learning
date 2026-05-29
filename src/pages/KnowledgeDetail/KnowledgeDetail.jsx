@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import { fetchLesson } from '../../api';
 import { markLessonCompleted, isLessonCompleted } from '../../utils/progress';
+import WikipediaImage from '../../components/WikipediaImage/WikipediaImage';
 import styles from './KnowledgeDetail.module.css';
 
 export default function KnowledgeDetail() {
@@ -34,26 +35,13 @@ export default function KnowledgeDetail() {
       {lesson.images && lesson.images.length > 0 && (
         <div className={styles.gallery}>
           {lesson.images.map((img, i) => (
-            <figure key={i} className={styles.figure}>
-              <img
-                className={styles.image}
-                src={img.url}
-                alt={img.caption}
-                loading="lazy"
-                onError={(e) => {
-                  e.target.style.display = 'none';
-                  e.target.nextSibling.style.display = 'flex';
-                }}
-              />
-              <div className={styles.imgFallback} style={{ display: 'none' }}>
-                <span className={styles.fallbackIcon}>🖼️</span>
-                <span className={styles.fallbackText}>图片加载失败</span>
-              </div>
-              <figcaption className={styles.figcaption}>
-                <p className={styles.caption}>{img.caption}</p>
-                <p className={styles.source}>来源：{img.source}</p>
-              </figcaption>
-            </figure>
+            <WikipediaImage
+              key={i}
+              keyword={img.keyword}
+              caption={img.caption}
+              source={img.source}
+              lang="zh"
+            />
           ))}
         </div>
       )}

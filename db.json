@@ -187,14 +187,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Peking_Man_Skull_%28replica%29_presented_at_China_Century_Expo.jpg/800px-Peking_Man_Skull_%28replica%29_presented_at_China_Century_Expo.jpg",
-          "caption": "北京人头盖骨复原像（复制品），1929年由裴文中发现于北京周口店龙骨山",
-          "source": "Wikimedia Commons"
+          "keyword": "北京人",
+          "caption": "北京人头盖骨复原像，1929年裴文中发现于周口店龙骨山",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Zhoukoudian_Upper_Cave_site.jpg/800px-Zhoukoudian_Upper_Cave_site.jpg",
+          "keyword": "周口店遗址",
           "caption": "北京周口店遗址外景，北京人和山顶洞人的发现地",
-          "source": "Wikimedia Commons / 周口店遗址"
+          "source": "Wikipedia"
         }
       ]
     },
@@ -225,14 +225,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Hemudu_site_pottery.jpg/800px-Hemudu_site_pottery.jpg",
-          "caption": "河姆渡遗址出土的黑陶器，距今约7000年，反映了长江流域的原始农耕文明",
-          "source": "Wikimedia Commons / 河姆渡遗址博物馆"
+          "keyword": "河姆渡遗址",
+          "caption": "河姆渡遗址出土的黑陶器，距今约7000年，反映长江流域原始农耕文明",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Banpo_village_-_model.jpg/800px-Banpo_village_-_model.jpg",
+          "keyword": "半坡遗址",
           "caption": "西安半坡遗址聚落复原模型，展示半地穴式圆形房屋",
-          "source": "Wikimedia Commons / 半坡博物馆"
+          "source": "Wikipedia"
         }
       ]
     },
@@ -259,14 +259,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Yellow_Emperor.jpg/400px-Yellow_Emperor.jpg",
-          "caption": "黄帝画像。炎帝和黄帝被尊为中华民族的人文初祖",
-          "source": "Wikimedia Commons"
+          "keyword": "黄帝",
+          "caption": "黄帝画像，炎帝和黄帝被尊为中华民族的人文初祖",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Da_Yu_controlling_water.jpg/800px-Da_Yu_controlling_water.jpg",
-          "caption": "大禹治水图。大禹采用疏导法治水成功，三过家门而不入",
-          "source": "Wikimedia Commons / 中国古画"
+          "keyword": "大禹治水",
+          "caption": "大禹治水图，大禹采用疏导法治水成功，三过家门而不入",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -311,14 +311,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/King_Wu_of_Zhou.jpg/400px-King_Wu_of_Zhou.jpg",
+          "keyword": "周武王",
           "caption": "周武王姬发画像，约前1046年牧野之战灭商建西周",
-          "source": "Wikimedia Commons"
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Western_Zhou_dynasty-bronzes.jpg/800px-Western_Zhou_dynasty-bronzes.jpg",
+          "keyword": "西周青铜器",
           "caption": "西周青铜礼器群，反映了分封制下严格的礼乐等级制度",
-          "source": "Wikimedia Commons"
+          "source": "Wikipedia"
         }
       ]
     },
@@ -345,14 +345,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/HouMuWu_Ding.jpg/800px-HouMuWu_Ding.jpg",
-          "caption": "司母戊鼎（后母戊鼎），商代后期铸造，重832.84千克，迄今世界上最重的青铜器",
-          "source": "Wikimedia Commons / 中国国家博物馆"
+          "keyword": "司母戊鼎",
+          "caption": "司母戊鼎（后母戊鼎），商代后期铸造，重832.84千克，迄今最重的青铜器",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Oracle_bone_inscriptions.jpg/800px-Oracle_bone_inscriptions.jpg",
-          "caption": "商代甲骨文，刻写在龟甲上的文字，中国已发现的最早的体系较完整的文字",
-          "source": "Wikimedia Commons"
+          "keyword": "甲骨文",
+          "caption": "商代甲骨文，刻写在龟甲上，中国已发现最早的体系较完整的文字",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -380,14 +380,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Confucius_-_The_Scholar_and_Sage.jpg/400px-Confucius_-_The_Scholar_and_Sage.jpg",
-          "caption": "孔子画像。孔子是儒家学派创始人，核心思想为'仁'和'礼'",
-          "source": "Wikimedia Commons"
+          "keyword": "孔子",
+          "caption": "孔子画像，儒家学派创始人，核心思想为仁和礼",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Laozi_Statue_at_Mount_Qingyuan.jpg/400px-Laozi_Statue_at_Mount_Qingyuan.jpg",
-          "caption": "老子雕像（福建清源山）。老子是道家学派创始人，著有《道德经》",
-          "source": "Wikimedia Commons"
+          "keyword": "老子",
+          "caption": "老子雕像（福建清源山），道家学派创始人，著有《道德经》",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -414,14 +414,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Terracotta_Army_Pit_1_-_Xi%27an.jpg/800px-Terracotta_Army_Pit_1_-_Xi%27an.jpg",
+          "keyword": "秦始皇兵马俑",
           "caption": "秦始皇陵兵马俑一号坑，展示了秦朝的强大军事力量和高度组织能力",
-          "source": "Wikimedia Commons / 秦始皇兵马俑博物馆"
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Great_Wall_of_China_at_Badaling.jpg/800px-Great_Wall_of_China_at_Badaling.jpg",
+          "keyword": "长城",
           "caption": "万里长城（八达岭段），秦统一后派蒙恬修筑，西起临洮东到辽东",
-          "source": "Wikimedia Commons"
+          "source": "Wikipedia"
         }
       ]
     },
@@ -456,14 +456,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Chen_Sheng_and_Wu_Guang_uprising.jpg/800px-Chen_Sheng_and_Wu_Guang_uprising.jpg",
-          "caption": "陈胜、吴广起义浮雕。前209年大泽乡起义，是中国历史上第一次大规模农民起义",
-          "source": "Wikimedia Commons"
+          "keyword": "陈胜吴广起义",
+          "caption": "陈胜吴广起义浮雕，前209年大泽乡起义，中国历史上第一次大规模农民起义",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Liu_Bang_portrait.jpg/400px-Liu_Bang_portrait.jpg",
-          "caption": "汉高祖刘邦画像。前202年楚汉之争胜利后建立汉朝",
-          "source": "Wikimedia Commons"
+          "keyword": "刘邦",
+          "caption": "汉高祖刘邦画像，前202年楚汉之争胜利后建立汉朝",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -490,14 +490,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Han_Wudi_portrait.jpg/400px-Han_Wudi_portrait.jpg",
-          "caption": "汉武帝刘彻画像。颁布推恩令，罢黜百家独尊儒术，北击匈奴",
-          "source": "Wikimedia Commons"
+          "keyword": "汉武帝",
+          "caption": "汉武帝刘彻画像，颁布推恩令，罢黜百家独尊儒术，北击匈奴",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Western_Han_Dynasty_map.jpg/800px-Western_Han_Dynasty_map.jpg",
+          "keyword": "西汉",
           "caption": "西汉疆域图，展示了汉武帝时期统一多民族国家的发展",
-          "source": "Wikimedia Commons"
+          "source": "Wikipedia"
         }
       ]
     },
@@ -528,14 +528,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Silk_Road_map.jpg/800px-Silk_Road_map.jpg",
+          "keyword": "丝绸之路",
           "caption": "丝绸之路路线图，从长安出发经河西走廊通往中亚、西亚和欧洲",
-          "source": "Wikimedia Commons"
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Zhang_Qian.jpg/400px-Zhang_Qian.jpg",
-          "caption": "张骞画像。两次出使西域，开辟丝绸之路，被誉为'中国走向世界第一人'",
-          "source": "Wikimedia Commons"
+          "keyword": "张骞",
+          "caption": "张骞画像，两次出使西域开辟丝绸之路，被誉为中国走向世界第一人",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -570,14 +570,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Grand_Canal_of_China_map.jpg/800px-Grand_Canal_of_China_map.jpg",
+          "keyword": "隋唐大运河",
           "caption": "隋朝大运河示意图，以洛阳为中心，北达涿郡南抵余杭，全长两千多千米",
-          "source": "Wikimedia Commons"
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Emperor_Wen_of_Sui.jpg/400px-Emperor_Wen_of_Sui.jpg",
-          "caption": "隋文帝杨坚画像。589年灭陈统一全国，开创科举制的雏形",
-          "source": "Wikimedia Commons"
+          "keyword": "隋文帝",
+          "caption": "隋文帝杨坚画像，589年灭陈统一全国，开创科举制的雏形",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -608,14 +608,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Tang_Taizong.jpg/400px-Tang_Taizong.jpg",
-          "caption": "唐太宗李世民画像。虚心纳谏，开创'贞观之治'",
-          "source": "Wikimedia Commons"
+          "keyword": "唐太宗",
+          "caption": "唐太宗李世民画像，虚心纳谏，开创贞观之治",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Tang_Xuanzong.jpg/400px-Tang_Xuanzong.jpg",
-          "caption": "唐玄宗李隆基画像。开元年间唐朝进入鼎盛——'开元盛世'",
-          "source": "Wikimedia Commons"
+          "keyword": "唐玄宗",
+          "caption": "唐玄宗李隆基画像，开元年间唐朝进入鼎盛——开元盛世",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -643,14 +643,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Tang_sancai_horse.jpg/800px-Tang_sancai_horse.jpg",
-          "caption": "唐三彩马，唐代陶瓷工艺的代表作，色彩绚丽，造型生动",
-          "source": "Wikimedia Commons / 陕西历史博物馆"
+          "keyword": "唐三彩",
+          "caption": "唐三彩马，唐代陶瓷工艺的代表作，色彩绚丽造型生动",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Li_Bai_strolling.jpg/400px-Li_Bai_strolling.jpg",
-          "caption": "李白画像。'诗仙'李白是唐代浪漫主义诗歌的最高代表",
-          "source": "Wikimedia Commons"
+          "keyword": "李白",
+          "caption": "李白画像，诗仙李白是唐代浪漫主义诗歌的最高代表",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -677,14 +677,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Zhao_Kuangyin_portrait.jpg/400px-Zhao_Kuangyin_portrait.jpg",
-          "caption": "宋太祖赵匡胤画像。960年陈桥兵变建立北宋，杯酒释兵权加强中央集权",
-          "source": "Wikimedia Commons"
+          "keyword": "赵匡胤",
+          "caption": "宋太祖赵匡胤画像，960年陈桥兵变建立北宋，杯酒释兵权加强中央集权",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Wang_Anshi.jpg/400px-Wang_Anshi.jpg",
-          "caption": "王安石画像。1069年在宋神宗支持下实行变法，推行募役法、方田均税法等",
-          "source": "Wikimedia Commons"
+          "keyword": "王安石",
+          "caption": "王安石画像，1069年在宋神宗支持下实行变法",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -715,14 +715,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Genghis_Khan_portrait.jpg/400px-Genghis_Khan_portrait.jpg",
-          "caption": "元太祖成吉思汗画像。1206年统一蒙古各部落，建立蒙古政权",
-          "source": "Wikimedia Commons / 台北故宫博物院"
+          "keyword": "成吉思汗",
+          "caption": "元太祖成吉思汗画像，1206年统一蒙古各部落建立蒙古政权",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Yuan_Dynasty_map.jpg/800px-Yuan_Dynasty_map.jpg",
-          "caption": "元朝疆域图。元朝是中国历史上疆域最辽阔的朝代，实行行省制度",
-          "source": "Wikimedia Commons"
+          "keyword": "元朝",
+          "caption": "元朝疆域图，中国历史上疆域最辽阔的朝代，实行行省制度",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -750,14 +750,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Movable_type_printing.jpg/800px-Movable_type_printing.jpg",
-          "caption": "活字印刷术复原模型。北宋毕昇发明，用胶泥刻字排版印刷",
-          "source": "Wikimedia Commons / 中国印刷博物馆"
+          "keyword": "活字印刷术",
+          "caption": "活字印刷术复原模型，北宋毕昇发明，用胶泥刻字排版印刷",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chinese_compass.jpg/800px-Chinese_compass.jpg",
-          "caption": "中国古代指南针（司南及罗盘），北宋末年用于航海，后经阿拉伯传入欧洲",
-          "source": "Wikimedia Commons"
+          "keyword": "指南针",
+          "caption": "中国古代指南针，北宋末年用于航海，后经阿拉伯传入欧洲",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -789,14 +789,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Forbidden_City_panorama.jpg/800px-Forbidden_City_panorama.jpg",
-          "caption": "北京故宫（紫禁城），明成祖时营建，是明清两代的皇宫，世界最大的宫殿建筑群",
-          "source": "Wikimedia Commons"
+          "keyword": "故宫",
+          "caption": "北京故宫（紫禁城），明成祖时营建，世界最大的宫殿建筑群",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Zheng_He%27s_treasure_ship_model.jpg/800px-Zheng_He%27s_treasure_ship_model.jpg",
-          "caption": "郑和宝船复原模型。1405至1433年郑和七下西洋，规模之大世所罕见",
-          "source": "Wikimedia Commons"
+          "keyword": "郑和下西洋",
+          "caption": "郑和宝船复原模型，1405至1433年郑和七下西洋，规模之大世所罕见",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -827,14 +827,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Emperor_Kangxi.jpg/400px-Emperor_Kangxi.jpg",
-          "caption": "清圣祖康熙帝画像。平定三藩、收复台湾、平定噶尔丹叛乱",
-          "source": "Wikimedia Commons / 故宫博物院"
+          "keyword": "康熙帝",
+          "caption": "清圣祖康熙帝画像，平定三藩收复台湾平定噶尔丹叛乱",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Summer_Palace_Beijing.jpg/800px-Summer_Palace_Beijing.jpg",
-          "caption": "北京颐和园（清漪园），清代皇家园林的代表作，集中体现了中国古代园林艺术",
-          "source": "Wikimedia Commons"
+          "keyword": "颐和园",
+          "caption": "北京颐和园（清漪园），清代皇家园林的代表作",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -866,14 +866,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Lin_Zexu_portrait.jpg/400px-Lin_Zexu_portrait.jpg",
-          "caption": "林则徐画像。1839年虎门销烟，展现了中华民族反抗外来侵略的坚强意志",
-          "source": "Wikimedia Commons"
+          "keyword": "林则徐",
+          "caption": "林则徐画像，1839年虎门销烟，展现中华民族反抗外来侵略的意志",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Signing_of_the_Treaty_of_Nanking.jpg/800px-Signing_of_the_Treaty_of_Nanking.jpg",
-          "caption": "《南京条约》签订场景（绘画）。1842年签订，中国近代史上第一个不平等条约",
-          "source": "Wikimedia Commons"
+          "keyword": "南京条约",
+          "caption": "《南京条约》签订场景绘画，1842年中国近代史上第一个不平等条约",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -908,14 +908,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Old_Summer_Palace_ruins.jpg/800px-Old_Summer_Palace_ruins.jpg",
-          "caption": "圆明园遗址。1860年被英法联军焚毁，是中国近代屈辱史的见证",
-          "source": "Wikimedia Commons"
+          "keyword": "圆明园",
+          "caption": "圆明园遗址，1860年被英法联军焚毁，中国近代屈辱史的见证",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hong_Xiuquan_portrait.jpg/400px-Hong_Xiuquan_portrait.jpg",
-          "caption": "洪秀全画像。1851年发动金田起义，建立太平天国，定都天京",
-          "source": "Wikimedia Commons"
+          "keyword": "洪秀全",
+          "caption": "洪秀全画像，1851年发动金田起义建立太平天国定都天京",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -947,14 +947,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Li_Hongzhang_portrait.jpg/400px-Li_Hongzhang_portrait.jpg",
+          "keyword": "李鸿章",
           "caption": "李鸿章画像，洋务派主要代表人物，创办江南制造总局等近代工业",
-          "source": "Wikimedia Commons"
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Kang_Youwei_portrait.jpg/400px-Kang_Youwei_portrait.jpg",
-          "caption": "康有为画像。1895年'公车上书'揭开维新变法序幕，1898年主持戊戌变法",
-          "source": "Wikimedia Commons"
+          "keyword": "康有为",
+          "caption": "康有为画像，1895年公车上书揭开维新变法序幕",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -990,14 +990,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Sun_Yat-sen_portrait.jpg/400px-Sun_Yat-sen_portrait.jpg",
-          "caption": "孙中山画像。中国近代民主革命先行者，提出三民主义，领导辛亥革命",
-          "source": "Wikimedia Commons"
+          "keyword": "孙中山",
+          "caption": "孙中山画像，中国近代民主革命先行者，提出三民主义领导辛亥革命",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Wuchang_uprising.jpg/800px-Wuchang_uprising.jpg",
-          "caption": "武昌起义历史照片。1911年10月10日打响辛亥革命第一枪",
-          "source": "Wikimedia Commons"
+          "keyword": "武昌起义",
+          "caption": "武昌起义历史照片，1911年10月10日打响辛亥革命第一枪",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -1028,14 +1028,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/May_Fourth_Movement.jpg/800px-May_Fourth_Movement.jpg",
-          "caption": "五四运动时期北京学生游行。1919年5月4日，'外争主权，内除国贼'",
-          "source": "Wikimedia Commons"
+          "keyword": "五四运动",
+          "caption": "五四运动时期北京学生游行，1919年5月4日外争主权内除国贼",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Site_of_the_First_National_Congress_of_CPC.jpg/800px-Site_of_the_First_National_Congress_of_CPC.jpg",
-          "caption": "中共一大会址（上海）。1921年7月，中国共产党在这里诞生",
-          "source": "Wikimedia Commons"
+          "keyword": "中国共产党第一次全国代表大会",
+          "caption": "中共一大会址（上海），1921年7月中国共产党诞生",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -1070,14 +1070,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Nanchang_uprising_monument.jpg/800px-Nanchang_uprising_monument.jpg",
-          "caption": "南昌八一起义纪念碑。1927年8月1日南昌起义，打响了武装反抗国民党反动派的第一枪",
-          "source": "Wikimedia Commons"
+          "keyword": "南昌起义",
+          "caption": "南昌八一起义纪念碑，1927年8月1日南昌起义",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Jinggangshan.jpg/800px-Jinggangshan.jpg",
-          "caption": "井冈山。毛泽东创建的中国第一个农村革命根据地，'农村包围城市'道路的起点",
-          "source": "Wikimedia Commons"
+          "keyword": "井冈山",
+          "caption": "井冈山，毛泽东创建的中国第一个农村革命根据地",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -1108,14 +1108,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Mao_Zedong_proclaiming_the_PRC.jpg/800px-Mao_Zedong_proclaiming_the_PRC.jpg",
+          "keyword": "开国大典",
           "caption": "1949年10月1日开国大典，毛泽东在天安门城楼宣告中华人民共和国成立",
-          "source": "Wikimedia Commons"
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Chinese_volunteers_crossing_Yalu_River.jpg/800px-Chinese_volunteers_crossing_Yalu_River.jpg",
-          "caption": "1950年中国人民志愿军跨过鸭绿江，抗美援朝保家卫国",
-          "source": "Wikimedia Commons"
+          "keyword": "抗美援朝",
+          "caption": "1950年中国人民志愿军跨过鸭绿江抗美援朝保家卫国",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -1146,14 +1146,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Shenzhen_skyline_from_Nanshan.jpg/800px-Shenzhen_skyline_from_Nanshan.jpg",
-          "caption": "深圳城市天际线。1980年设立经济特区，从边陲小镇发展为现代化大都市",
-          "source": "Wikimedia Commons"
+          "keyword": "深圳市",
+          "caption": "深圳城市天际线，1980年设立经济特区，从边陲小镇发展为现代化大都市",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Deng_Xiaoping_at_the_3rd_Plenary_Session.jpg/800px-Deng_Xiaoping_at_the_3rd_Plenary_Session.jpg",
-          "caption": "1978年十一届三中全会确立改革开放的历史决策，开启了现代化建设新时期",
-          "source": "Wikimedia Commons"
+          "keyword": "改革开放",
+          "caption": "1978年十一届三中全会确立改革开放历史决策",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -1184,14 +1184,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/All_Gizah_Pyramids.jpg/800px-All_Gizah_Pyramids.jpg",
-          "caption": "埃及吉萨金字塔群。其中胡夫金字塔是古代世界七大奇迹之一，建于约前2600年",
-          "source": "Wikimedia Commons"
+          "keyword": "埃及金字塔",
+          "caption": "埃及吉萨金字塔群，胡夫金字塔建于约前2600年，古代世界七大奇迹之一",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Great_Sphinx_of_Giza.jpg/800px-Great_Sphinx_of_Giza.jpg",
-          "caption": "狮身人面像（斯芬克斯），位于胡夫金字塔旁，古埃及文明的标志性建筑",
-          "source": "Wikimedia Commons"
+          "keyword": "狮身人面像",
+          "caption": "狮身人面像（斯芬克斯），古埃及文明的标志性建筑",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -1222,14 +1222,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Code_of_Hammurabi_stele.jpg/400px-Code_of_Hammurabi_stele.jpg",
-          "caption": "《汉谟拉比法典》石柱（卢浮宫藏）。约前18世纪颁布，世界上第一部较完整的成文法典",
-          "source": "Wikimedia Commons / 卢浮宫博物馆"
+          "keyword": "汉谟拉比法典",
+          "caption": "《汉谟拉比法典》石柱（卢浮宫藏），约前18世纪颁布",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Buddha_statue_in_Sarnath.jpg/800px-Buddha_statue_in_Sarnath.jpg",
-          "caption": "佛陀雕像。公元前6世纪释迦牟尼（乔达摩·悉达多）创立佛教",
-          "source": "Wikimedia Commons"
+          "keyword": "释迦牟尼",
+          "caption": "佛陀雕像，公元前6世纪释迦牟尼创立佛教",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -1256,14 +1256,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/800px-The_Parthenon_in_Athens.jpg",
-          "caption": "雅典帕特农神庙。建于公元前5世纪，古希腊建筑的杰出代表，供奉雅典娜女神",
-          "source": "Wikimedia Commons"
+          "keyword": "帕特农神庙",
+          "caption": "雅典帕特农神庙，建于前5世纪，古希腊建筑的杰出代表",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Aristotle_statue.jpg/400px-Aristotle_statue.jpg",
-          "caption": "亚里士多德雕像。古希腊百科全书式的学者，对哲学、科学等领域有深远影响",
-          "source": "Wikimedia Commons"
+          "keyword": "亚里士多德",
+          "caption": "亚里士多德雕像，古希腊百科全书式的学者",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -1294,14 +1294,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2024.jpg/800px-Colosseo_2024.jpg",
-          "caption": "罗马斗兽场（罗马大竞技场），古罗马建筑的杰出代表，可容纳约5万观众",
-          "source": "Wikimedia Commons"
+          "keyword": "罗马斗兽场",
+          "caption": "罗马斗兽场，古罗马建筑杰出代表，可容纳约5万观众",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Augustus_of_Prima_Porta.jpg/400px-Augustus_of_Prima_Porta.jpg",
-          "caption": "奥古斯都（屋大维）雕像。前27年建立罗马帝国，开启'罗马和平'时代",
-          "source": "Wikimedia Commons"
+          "keyword": "奥古斯都",
+          "caption": "奥古斯都（屋大维）雕像，前27年建立罗马帝国",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -1332,14 +1332,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Hagia_Sophia_Istanbul.jpg/800px-Hagia_Sophia_Istanbul.jpg",
-          "caption": "圣索菲亚大教堂（伊斯坦布尔），拜占庭帝国查士丁尼时期建造，拜占庭建筑的代表作",
-          "source": "Wikimedia Commons"
+          "keyword": "圣索菲亚大教堂",
+          "caption": "圣索菲亚大教堂（伊斯坦布尔），拜占庭建筑代表作",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Charlemagne_portrait.jpg/400px-Charlemagne_portrait.jpg",
-          "caption": "查理曼画像。800年加冕为'罗马人的皇帝'，法兰克王国达到鼎盛",
-          "source": "Wikimedia Commons"
+          "keyword": "查理曼",
+          "caption": "查理曼画像，800年加冕为罗马人的皇帝",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -1366,14 +1366,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/400px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
-          "caption": "《蒙娜丽莎》，列奥纳多·达·芬奇代表作，文艺复兴时期最著名的肖像画（卢浮宫藏）",
-          "source": "Wikimedia Commons / 卢浮宫博物馆"
+          "keyword": "蒙娜丽莎",
+          "caption": "《蒙娜丽莎》，达·芬奇代表作，文艺复兴最著名的肖像画",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo%27s_David_-_Florence.jpg/400px-Michelangelo%27s_David_-_Florence.jpg",
-          "caption": "米开朗基罗的《大卫》雕像，文艺复兴雕塑的巅峰之作，体现了人文主义精神",
-          "source": "Wikimedia Commons"
+          "keyword": "大卫像",
+          "caption": "米开朗基罗的《大卫》雕像，文艺复兴雕塑的巅峰之作",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -1404,14 +1404,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Columbus_ships.jpg/800px-Columbus_ships.jpg",
-          "caption": "哥伦布船队复原图。1492年哥伦布横渡大西洋到达美洲，开启大航海时代",
-          "source": "Wikimedia Commons"
+          "keyword": "克里斯托弗·哥伦布",
+          "caption": "哥伦布船队复原图，1492年哥伦布横渡大西洋到达美洲",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Map_of_the_world_by_Cantino.jpg/800px-Map_of_the_world_by_Cantino.jpg",
-          "caption": "1502年世界地图（坎提诺平面天球图），反映了新航路开辟后欧洲人对世界的新认识",
-          "source": "Wikimedia Commons"
+          "keyword": "地理大发现",
+          "caption": "1502年世界地图，反映新航路开辟后欧洲人对世界的新认识",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -1442,14 +1442,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Charles_I_of_England.jpg/400px-Charles_I_of_England.jpg",
-          "caption": "英王查理一世画像。1649年被送上断头台，英国宣布成立共和国",
-          "source": "Wikimedia Commons"
+          "keyword": "查理一世_(英格兰)",
+          "caption": "英王查理一世画像，1649年被送上断头台",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Palace_of_Westminster%2C_London.jpg/800px-Palace_of_Westminster%2C_London.jpg",
-          "caption": "英国国会大厦（威斯敏斯特宫）。1689年《权利法案》确立了议会的最高地位",
-          "source": "Wikimedia Commons"
+          "keyword": "威斯敏斯特宫",
+          "caption": "英国国会大厦（威斯敏斯特宫），1689年《权利法案》确立了议会最高地位",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -1484,14 +1484,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Declaration_of_Independence_scene.jpg/800px-Declaration_of_Independence_scene.jpg",
-          "caption": "《独立宣言》签署场景（绘画）。1776年7月4日大陆会议通过杰斐逊起草的《独立宣言》",
-          "source": "Wikimedia Commons"
+          "keyword": "美国独立宣言",
+          "caption": "《独立宣言》签署场景，1776年7月4日大陆会议通过",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/400px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
-          "caption": "乔治·华盛顿画像。独立战争总司令，美国第一任总统（1789—1797）",
-          "source": "Wikimedia Commons"
+          "keyword": "乔治·华盛顿",
+          "caption": "乔治·华盛顿画像，独立战争总司令，美国第一任总统",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -1526,14 +1526,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Prise_de_la_Bastille.jpg/800px-Prise_de_la_Bastille.jpg",
-          "caption": "攻占巴士底狱（1789年7月14日）。法国大革命爆发的标志性事件",
-          "source": "Wikimedia Commons"
+          "keyword": "攻占巴士底狱",
+          "caption": "攻占巴士底狱（1789年7月14日），法国大革命爆发的标志性事件",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg/400px-Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
-          "caption": "拿破仑一世画像（雅克-路易·大卫绘）。1804年称帝，颁布《拿破仑法典》",
-          "source": "Wikimedia Commons / 华盛顿国家美术馆"
+          "keyword": "拿破仑一世",
+          "caption": "拿破仑一世画像，1804年称帝颁布《拿破仑法典》",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -1564,14 +1564,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Steam_engine_of_James_Watt.jpg/800px-Steam_engine_of_James_Watt.jpg",
-          "caption": "瓦特改良的蒸汽机（复原）。1785年投入使用，人类从此进入'蒸汽时代'",
-          "source": "Wikimedia Commons"
+          "keyword": "蒸汽机",
+          "caption": "瓦特改良的蒸汽机（复原），1785年投入使用，人类进入蒸汽时代",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Stephenson%27s_Rocket_drawing.jpg/800px-Stephenson%27s_Rocket_drawing.jpg",
-          "caption": "斯蒂芬森的'火箭号'蒸汽机车（1829年），标志着铁路时代的到来",
-          "source": "Wikimedia Commons"
+          "keyword": "斯蒂芬森火箭号",
+          "caption": "斯蒂芬森的火箭号蒸汽机车（1829年），标志铁路时代的到来",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -1606,14 +1606,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Cheshire_Regiment_trench_Somme_1916.jpg/800px-Cheshire_Regiment_trench_Somme_1916.jpg",
-          "caption": "一战时期的战壕（索姆河地区，1916年）。一战以堑壕战为主要作战方式",
-          "source": "Wikimedia Commons / 英国帝国战争博物馆"
+          "keyword": "第一次世界大战",
+          "caption": "一战时期的战壕（索姆河地区1916年），一战以堑壕战为主要方式",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Archduke_Franz_Ferdinand_of_Austria.jpg/400px-Archduke_Franz_Ferdinand_of_Austria.jpg",
-          "caption": "斐迪南大公。1914年6月28日在萨拉热窝遇刺，成为一战的导火线",
-          "source": "Wikimedia Commons"
+          "keyword": "萨拉热窝事件",
+          "caption": "斐迪南大公，1914年6月28日在萨拉热窝遇刺成为一战的导火线",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -1648,14 +1648,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Into_the_Jaws_of_Death_-_Normandy_landing.jpg/800px-Into_the_Jaws_of_Death_-_Normandy_landing.jpg",
-          "caption": "1944年6月6日诺曼底登陆。盟军在法国诺曼底海滩登陆，开辟了欧洲第二战场",
-          "source": "Wikimedia Commons / 美国国家档案馆"
+          "keyword": "诺曼底登陆",
+          "caption": "1944年6月6日诺曼底登陆，盟军开辟了欧洲第二战场",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nagasakibomb.jpg/800px-Nagasakibomb.jpg",
-          "caption": "1945年8月9日长崎原子弹爆炸蘑菇云。8月15日日本宣布无条件投降，二战结束",
-          "source": "Wikimedia Commons / 美国国家档案馆"
+          "keyword": "广岛与长崎原子弹爆炸",
+          "caption": "1945年8月9日长崎原子弹爆炸，日本宣布无条件投降二战结束",
+          "source": "Wikipedia"
         }
       ]
     },
@@ -1686,14 +1686,14 @@
       ],
       "images": [
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Berlin_Wall_graffiti.jpg/800px-Berlin_Wall_graffiti.jpg",
-          "caption": "柏林墙。1961年修建，1989年倒塌，是冷战和东西方对峙的象征",
-          "source": "Wikimedia Commons"
+          "keyword": "柏林墙",
+          "caption": "柏林墙，1961年修建1989年倒塌，是冷战和东西方对峙的象征",
+          "source": "Wikipedia"
         },
         {
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/United_Nations_Headquarters_in_New_York_City.jpg/800px-United_Nations_Headquarters_in_New_York_City.jpg",
-          "caption": "联合国总部大楼（纽约）。二战后成立的最重要的国际组织，致力于维护世界和平",
-          "source": "Wikimedia Commons"
+          "keyword": "联合国总部大楼",
+          "caption": "联合国总部大楼（纽约），二战后成立的最重要的国际组织",
+          "source": "Wikipedia"
         }
       ]
     }
