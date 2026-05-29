@@ -1,36 +1,38 @@
-const STORAGE_KEY = 'history-learning-progress';
+function getKey(accountId) {
+  return `hl-progress-${accountId}`;
+}
 
-function getData() {
-  const raw = localStorage.getItem(STORAGE_KEY);
+function getData(accountId) {
+  const raw = localStorage.getItem(getKey(accountId));
   if (!raw) {
     return { completedLessons: [], quizHistory: [], weakPoints: [] };
   }
   return JSON.parse(raw);
 }
 
-function saveData(data) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+function saveData(accountId, data) {
+  localStorage.setItem(getKey(accountId), JSON.stringify(data));
 }
 
-export function markLessonCompleted(lessonId) {
-  const data = getData();
+export function markLessonCompleted(accountId, lessonId) {
+  const data = getData(accountId);
   if (!data.completedLessons.includes(lessonId)) {
     data.completedLessons.push(lessonId);
-    saveData(data);
+    saveData(accountId, data);
   }
 }
 
-export function isLessonCompleted(lessonId) {
-  const data = getData();
+export function isLessonCompleted(accountId, lessonId) {
+  const data = getData(accountId);
   return data.completedLessons.includes(lessonId);
 }
 
-export function getCompletedLessons() {
-  return getData().completedLessons;
+export function getCompletedLessons(accountId) {
+  return getData(accountId).completedLessons;
 }
 
-export function saveQuizResult(result) {
-  const data = getData();
+export function saveQuizResult(accountId, result) {
+  const data = getData(accountId);
   data.quizHistory.push({
     date: new Date().toISOString(),
     score: result.score,
@@ -48,25 +50,26 @@ export function saveQuizResult(result) {
     });
   }
 
-  saveData(data);
+  saveData(accountId, data);
 }
 
-export function getQuizHistory() {
-  return getData().quizHistory;
+export function getQuizHistory(accountId) {
+  return getData(accountId).quizHistory;
 }
 
-export function getWeakPoints() {
-  return getData().weakPoints;
+export function getWeakPoints(accountId) {
+  return getData(accountId).weakPoints;
 }
 
-export function getProgressStats() {
+export function getProgressStats(accountId) {
+  const data = getData(accountId);
   return {
-    completedLessons: getData().completedLessons,
-    quizHistory: getData().quizHistory,
-    weakPoints: getData().weakPoints,
+    completedLessons: data.completedLessons,
+    quizHistory: data.quizHistory,
+    weakPoints: data.weakPoints,
   };
 }
 
-export function resetProgress() {
-  localStorage.removeItem(STORAGE_KEY);
+export function resetProgress(accountId) {
+  localStorage.removeItem(getKey(accountId));
 }

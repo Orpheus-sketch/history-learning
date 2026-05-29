@@ -2,11 +2,13 @@ import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { fetchGrades, fetchUnits, fetchLessons } from '../../api';
 import { getCompletedLessons } from '../../utils/progress';
+import { useAccount } from '../../context/AccountContext';
 import KnowledgeCard from '../../components/KnowledgeCard/KnowledgeCard';
 import GradeFilter from '../../components/GradeFilter/GradeFilter';
 import styles from './KnowledgeList.module.css';
 
 export default function KnowledgeList() {
+  const { activeAccount } = useAccount();
   const [searchParams, setSearchParams] = useSearchParams();
   const [grades, setGrades] = useState([]);
   const [units, setUnits] = useState([]);
@@ -41,7 +43,7 @@ export default function KnowledgeList() {
     load();
   }, [gradeId, unitId]);
 
-  const completedLessons = getCompletedLessons();
+  const completedLessons = getCompletedLessons(activeAccount?.id);
 
   return (
     <div className={styles.page}>

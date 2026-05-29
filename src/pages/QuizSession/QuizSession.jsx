@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { fetchQuestions } from '../../api';
 import { saveQuizResult } from '../../utils/progress';
+import { useAccount } from '../../context/AccountContext';
 import styles from './QuizSession.module.css';
 
 const TYPE_LABELS = { choice: '选择题', judge: '判断题', fill: '填空题', short: '问答题' };
@@ -11,6 +12,7 @@ function normalize(str) {
 }
 
 export default function QuizSession() {
+  const { activeAccount } = useAccount();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const [questions, setQuestions] = useState([]);
@@ -147,7 +149,7 @@ export default function QuizSession() {
       if (isWrong) wrongLessonIds.push(qt.lessonId);
     });
 
-    saveQuizResult({
+    saveQuizResult(activeAccount?.id, {
       score,
       total: questions.length,
       gradeId: Number(searchParams.get('gradeId')) || 0,

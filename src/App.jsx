@@ -1,6 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Welcome from './pages/Welcome/Welcome';
+import AccountSelect from './pages/AccountSelect/AccountSelect';
+import AccountCreate from './pages/AccountCreate/AccountCreate';
+import ProfileSettings from './pages/ProfileSettings/ProfileSettings';
 import Home from './pages/Home/Home';
 import KnowledgeList from './pages/KnowledgeList/KnowledgeList';
 import KnowledgeDetail from './pages/KnowledgeDetail/KnowledgeDetail';
@@ -15,8 +18,11 @@ function App() {
     <BrowserRouter basename="/history-learning">
       <Routes>
         <Route path="/" element={<Welcome />} />
+        <Route path="/account" element={<AccountSelect />} />
+        <Route path="/account/create" element={<AccountCreate />} />
         <Route element={<Layout />}>
           <Route path="/home" element={<Home />} />
+          <Route path="/profile" element={<ProfileSettings />} />
           <Route path="/knowledge" element={<KnowledgeList />} />
           <Route path="/knowledge/:lessonId" element={<KnowledgeDetail />} />
           <Route path="/timeline" element={<TimelinePage />} />

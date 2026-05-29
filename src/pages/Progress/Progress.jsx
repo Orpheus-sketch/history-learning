@@ -5,11 +5,13 @@ import {
 } from 'recharts';
 import { fetchGrades, fetchUnits, fetchLessons, fetchAllGrades } from '../../api';
 import { getProgressStats } from '../../utils/progress';
+import { useAccount } from '../../context/AccountContext';
 import styles from './Progress.module.css';
 
 const COLORS = ['#2563eb', '#16a34a', '#f59e0b', '#dc2626', '#8b5cf6', '#06b6d4'];
 
 export default function Progress() {
+  const { activeAccount } = useAccount();
   const [gradeStats, setGradeStats] = useState([]);
   const [quizHistory, setQuizHistory] = useState([]);
   const [learningPct, setLearningPct] = useState(0);
@@ -18,7 +20,7 @@ export default function Progress() {
   useEffect(() => {
     const load = async () => {
       const grades = await fetchAllGrades();
-      const stats = getProgressStats();
+      const stats = getProgressStats(activeAccount?.id);
 
       const gradeData = [];
       let totalLessonsCount = 0;

@@ -3,10 +3,12 @@ import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import { fetchLesson } from '../../api';
 import { markLessonCompleted, isLessonCompleted } from '../../utils/progress';
+import { useAccount } from '../../context/AccountContext';
 import WikipediaImage from '../../components/WikipediaImage/WikipediaImage';
 import styles from './KnowledgeDetail.module.css';
 
 export default function KnowledgeDetail() {
+  const { activeAccount } = useAccount();
   const { lessonId } = useParams();
   const [lesson, setLesson] = useState(null);
   const [completed, setCompleted] = useState(false);
@@ -14,12 +16,12 @@ export default function KnowledgeDetail() {
   useEffect(() => {
     fetchLesson(lessonId).then((data) => {
       setLesson(data);
-      setCompleted(isLessonCompleted(data.id));
+      setCompleted(isLessonCompleted(activeAccount?.id, data.id));
     });
   }, [lessonId]);
 
   const handleComplete = () => {
-    markLessonCompleted(Number(lessonId));
+    markLessonCompleted(activeAccount?.id, Number(lessonId));
     setCompleted(true);
   };
 

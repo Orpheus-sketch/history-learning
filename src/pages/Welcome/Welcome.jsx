@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useAccount } from '../../context/AccountContext';
 import styles from './Welcome.module.css';
 
 const quotes = [
@@ -31,6 +32,7 @@ const quotes = [
 
 export default function Welcome() {
   const navigate = useNavigate();
+  const { activeAccount } = useAccount();
   const [quote, setQuote] = useState(null);
   const [visible, setVisible] = useState(false);
 
@@ -44,7 +46,8 @@ export default function Welcome() {
 
   const handleEnter = () => {
     setVisible(false);
-    setTimeout(() => navigate('/home'), 600);
+    const dest = activeAccount ? '/home' : '/account';
+    setTimeout(() => navigate(dest), 600);
   };
 
   if (!quote) return null;

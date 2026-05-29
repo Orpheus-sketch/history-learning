@@ -2,10 +2,12 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchGrades, fetchUnits, fetchLessons } from '../../api';
 import { getProgressStats } from '../../utils/progress';
+import { useAccount } from '../../context/AccountContext';
 import ProgressBar from '../../components/ProgressBar/ProgressBar';
 import styles from './Home.module.css';
 
 export default function Home() {
+  const { activeAccount } = useAccount();
   const [grades, setGrades] = useState([]);
   const [totalLessons, setTotalLessons] = useState(0);
   const [completedCount, setCompletedCount] = useState(0);
@@ -27,7 +29,7 @@ export default function Home() {
       }
       setTotalLessons(total);
 
-      const stats = getProgressStats();
+      const stats = getProgressStats(activeAccount?.id);
       setCompletedCount(stats.completedLessons.length);
       setQuizCount(stats.quizHistory.length);
       if (stats.quizHistory.length > 0) {
