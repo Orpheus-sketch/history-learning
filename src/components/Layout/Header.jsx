@@ -2,7 +2,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import styles from './Header.module.css';
 
 const navItems = [
-  { path: '/', label: '首页', icon: '📖' },
+  { path: '/home', label: '首页', icon: '📖' },
   { path: '/knowledge', label: '知识学习', icon: '📚' },
   { path: '/timeline', label: '时间线', icon: '⏳' },
   { path: '/quiz', label: '习题练习', icon: '✏️' },

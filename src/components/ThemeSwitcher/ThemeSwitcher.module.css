@@ -41,6 +41,43 @@
   border-bottom: 1px solid var(--border, #e2e8f0);
 }
 
+.tabRow {
+  display: flex;
+  border-bottom: 1px solid var(--border, #e2e8f0);
+}
+
+.tabBtn {
+  flex: 1;
+  padding: 12px;
+  background: none;
+  border: none;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+  position: relative;
+}
+
+.tabBtn:hover {
+  color: var(--primary);
+}
+
+.tabBtnActive {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.tabBtnActive::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  right: 20%;
+  height: 2px;
+  background: var(--primary);
+  border-radius: 1px;
+}
+
 .option {
   display: flex;
   align-items: center;

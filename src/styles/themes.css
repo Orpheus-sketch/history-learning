@@ -113,3 +113,131 @@
   --primary-light: rgba(185,28,28,0.1);
   --primary-dark: #991b1b;
 }
+
+/* ============================================
+   底纹图案 — 用户可选背景纹理
+   ============================================ */
+
+/* 矢车菊纹 — 《寻梦环游记》万寿菊花瓣纹样 */
+[data-pattern="coco"] body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.12;
+  background-image:
+    /* 大花瓣 */
+    radial-gradient(ellipse at 30% 40%, #ff8c00 0%, transparent 12%),
+    radial-gradient(ellipse at 70% 35%, #ffa500 0%, transparent 10%),
+    radial-gradient(ellipse at 45% 55%, #ff7b00 0%, transparent 14%),
+    radial-gradient(ellipse at 85% 60%, #ff8c00 0%, transparent 11%),
+    radial-gradient(ellipse at 15% 65%, #ffa500 0%, transparent 13%),
+    radial-gradient(ellipse at 55% 75%, #ff7b00 0%, transparent 10%),
+    radial-gradient(ellipse at 80% 80%, #ff8c00 0%, transparent 12%),
+    radial-gradient(ellipse at 25% 85%, #ffa500 0%, transparent 11%),
+    /* 小花瓣 */
+    radial-gradient(ellipse at 10% 15%, #ffb347 0%, transparent 6%),
+    radial-gradient(ellipse at 50% 10%, #ffcc66 0%, transparent 5%),
+    radial-gradient(ellipse at 90% 15%, #ffb347 0%, transparent 7%),
+    radial-gradient(ellipse at 35% 25%, #ffcc66 0%, transparent 5%),
+    radial-gradient(ellipse at 65% 20%, #ffb347 0%, transparent 6%),
+    radial-gradient(ellipse at 20% 45%, #ffcc66 0%, transparent 5%),
+    radial-gradient(ellipse at 75% 50%, #ffb347 0%, transparent 6%),
+    radial-gradient(ellipse at 40% 90%, #ffcc66 0%, transparent 5%),
+    radial-gradient(ellipse at 60% 85%, #ffb347 0%, transparent 6%);
+  background-size: 200px 200px, 180px 180px, 220px 220px, 190px 190px,
+                     210px 210px, 180px 180px, 200px 200px, 190px 190px,
+                     100px 100px, 90px 90px, 110px 110px, 95px 95px,
+                     105px 105px, 90px 90px, 100px 100px, 95px 95px;
+  background-position:
+    5% 10%, 55% 5%, 25% 40%, 75% 30%, 10% 55%, 50% 60%, 80% 65%, 30% 75%,
+    8% 8%, 48% 3%, 88% 8%, 33% 20%, 63% 15%, 18% 40%, 73% 45%, 58% 80%;
+  background-repeat: repeat;
+  animation: petalDrift 30s linear infinite;
+}
+
+@keyframes petalDrift {
+  0% { background-position: 5% 10%, 55% 5%, 25% 40%, 75% 30%, 10% 55%, 50% 60%, 80% 65%, 30% 75%, 8% 8%, 48% 3%, 88% 8%, 33% 20%, 63% 15%, 18% 40%, 73% 45%, 58% 80%; }
+  100% { background-position: 5% -190px, 55% -195px, 25% -160px, 75% -170px, 10% -145px, 50% -140px, 80% -135px, 30% -125px, 8% -192px, 48% -197px, 88% -192px, 33% -180px, 63% -185px, 18% -160px, 73% -155px, 58% -120px; }
+}
+
+/* 祥云纹 — 传统祥云瑞气 */
+[data-pattern="cloud"] body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.1;
+  background-image:
+    radial-gradient(circle at 15% 20%, currentColor 0%, transparent 35%),
+    radial-gradient(circle at 85% 30%, currentColor 0%, transparent 30%),
+    radial-gradient(circle at 40% 60%, currentColor 0%, transparent 40%),
+    radial-gradient(circle at 70% 75%, currentColor 0%, transparent 35%),
+    radial-gradient(circle at 10% 85%, currentColor 0%, transparent 28%);
+  background-size: 300px 300px;
+}
+
+/* 水波纹 — 古典水波涟漪 */
+[data-pattern="wave"] body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.08;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 28px,
+    currentColor 28px,
+    currentColor 28.5px,
+    transparent 28.5px,
+    transparent 30px,
+    currentColor 30px,
+    currentColor 30.5px,
+    transparent 30.5px,
+    transparent 34px,
+    currentColor 34px,
+    currentColor 34.5px
+  );
+  mask-image: radial-gradient(ellipse at 50% 50%, black 30%, transparent 70%);
+}
+
+/* 回字纹 — 传统几何纹样 */
+[data-pattern="grid"] body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.07;
+  background-image:
+    linear-gradient(currentColor 1px, transparent 1px),
+    linear-gradient(90deg, currentColor 1px, transparent 1px),
+    linear-gradient(45deg, currentColor 0.5px, transparent 0.5px),
+    linear-gradient(-45deg, currentColor 0.5px, transparent 0.5px);
+  background-size: 40px 40px, 40px 40px, 56px 56px, 56px 56px;
+}
+
+/* 缠枝纹 — 花卉连续纹样 */
+[data-pattern="branch"] body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.09;
+  background-image:
+    radial-gradient(circle at 0% 0%, transparent 48%, currentColor 48%, currentColor 52%, transparent 52%),
+    radial-gradient(circle at 50% 50%, currentColor 0%, transparent 25%),
+    radial-gradient(circle at 100% 100%, transparent 48%, currentColor 48%, currentColor 52%, transparent 52%);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px, 0 0;
+}
+
+/* 无底纹 — 纯色 */
+[data-pattern="none"] body::after {
+  display: none;
+}
