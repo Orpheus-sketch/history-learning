@@ -17,6 +17,7 @@ const PATTERNS = [
   { id: 'wave', name: '水波纹', icon: '🌊', desc: '古典水波涟漪纹样' },
   { id: 'grid', name: '回字纹', icon: '🔲', desc: '传统回纹几何纹样' },
   { id: 'branch', name: '缠枝纹', icon: '🌿', desc: '缠枝花卉连续纹样' },
+  { id: 'onepiece', name: '航海纹', icon: '🏴‍☠️', desc: '《One Piece》航海冒险波纹' },
 ];
 
 export function ThemeProvider({ children }) {

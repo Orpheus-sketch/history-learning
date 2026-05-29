@@ -237,6 +237,54 @@
   background-position: 0 0, 40px 40px, 0 0;
 }
 
+/* 航海纹 — 《One Piece》航海冒险波纹 */
+[data-pattern="onepiece"] body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.08;
+  background-image:
+    /* wave lines */
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 38px,
+      #1a8fe3 38px,
+      #1a8fe3 40px,
+      transparent 40px,
+      transparent 44px,
+      #0d6fb8 44px,
+      #0d6fb8 46px,
+      transparent 46px
+    ),
+    /* compass dots */
+    radial-gradient(circle at 15% 30%, #ffd700 0%, transparent 1%),
+    radial-gradient(circle at 35% 70%, #ffd700 0%, transparent 1%),
+    radial-gradient(circle at 65% 20%, #ffd700 0%, transparent 1%),
+    radial-gradient(circle at 85% 60%, #ffd700 0%, transparent 1%),
+    radial-gradient(circle at 50% 50%, #ffd700 0%, transparent 1%),
+    /* anchor crosses */
+    radial-gradient(cross at 25% 40%, #c41e3a 0.5px, transparent 1px),
+    radial-gradient(cross at 75% 55%, #c41e3a 0.5px, transparent 1px);
+  background-size:
+    100% 80px,
+    200px 200px,
+    180px 180px,
+    220px 220px,
+    190px 190px,
+    210px 210px,
+    250px 250px,
+    200px 200px;
+  animation: waveDrift 20s linear infinite;
+}
+
+@keyframes waveDrift {
+  from { background-position: 0 0, 0 0, 40px 40px, 80px 80px, 120px 120px, 160px 160px, 200px 200px, 250px 250px; }
+  to { background-position: 0 80px, 200px 200px, 220px 220px, 280px 280px, 320px 320px, 360px 360px, 450px 450px, 450px 450px; }
+}
+
 /* 无底纹 — 纯色 */
 [data-pattern="none"] body::after {
   display: none;

@@ -35,13 +35,10 @@ export default function Welcome() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    // Pick a quote based on today's date (changes daily)
     const today = new Date();
     const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 86400000);
     const idx = dayOfYear % quotes.length;
     setQuote(quotes[idx]);
-
-    // Entrance animation
     setTimeout(() => setVisible(true), 200);
   }, []);
 
@@ -54,47 +51,93 @@ export default function Welcome() {
 
   return (
     <div className={`${styles.welcome} ${visible ? styles.visible : ''}`}>
-      {/* Decorative marigold petals */}
-      <div className={styles.petals}>
-        {[...Array(20)].map((_, i) => (
-          <div
-            key={i}
-            className={styles.petal}
-            style={{
-              left: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 8}s`,
-              animationDuration: `${6 + Math.random() * 8}s`,
-              transform: `rotate(${Math.random() * 360}deg) scale(${0.4 + Math.random() * 0.8})`,
-              opacity: 0.15 + Math.random() * 0.25,
-            }}
-          />
+      {/* Ocean waves at bottom */}
+      <div className={styles.waves}>
+        <div className={styles.wave1} />
+        <div className={styles.wave2} />
+        <div className={styles.wave3} />
+      </div>
+
+      {/* Floating clouds */}
+      <div className={styles.clouds}>
+        {[...Array(6)].map((_, i) => (
+          <div key={i} className={styles.cloud} style={{
+            top: `${5 + i * 14}%`,
+            left: `${-10 + i * 20}%`,
+            animationDelay: `${i * 3}s`,
+            animationDuration: `${18 + i * 4}s`,
+          }} />
+        ))}
+      </div>
+
+      {/* Seagulls */}
+      <div className={styles.seagulls}>
+        {[...Array(4)].map((_, i) => (
+          <div key={i} className={styles.seagull} style={{
+            top: `${8 + i * 10}%`,
+            left: `${-5 + i * 30}%`,
+            animationDelay: `${i * 2}s`,
+            animationDuration: `${8 + i * 3}s`,
+          }} />
+        ))}
+      </div>
+
+      {/* Treasure sparkles */}
+      <div className={styles.sparkles}>
+        {[...Array(15)].map((_, i) => (
+          <div key={i} className={styles.sparkle} style={{
+            left: `${Math.random() * 100}%`,
+            top: `${Math.random() * 100}%`,
+            animationDelay: `${Math.random() * 4}s`,
+          }} />
         ))}
       </div>
 
       <div className={styles.content}>
+        {/* Compass emblem */}
         <div className={styles.emblem}>
-          <div className={styles.emblemInner}>
-            <span className={styles.emblemChar}>史</span>
+          <div className={styles.emblemOuter}>
+            <div className={styles.emblemInner}>
+              <span className={styles.emblemChar}>史</span>
+            </div>
           </div>
+          <div className={styles.emblemRope} />
         </div>
 
-        <h1 className={styles.title}>历史学习</h1>
-        <p className={styles.subtitle}>穿越时空，与文明对话</p>
+        {/* Sound effect */}
+        <div className={styles.soundFx}>ドン!!</div>
 
+        <h1 className={styles.title}>
+          <span className={styles.titleLine1}>歷史學習</span>
+          <span className={styles.titleLine2}>~ 穿越時空的大冒險 ~</span>
+        </h1>
+
+        <p className={styles.subtitle}>
+          <span className={styles.subIcon}>⚓</span>
+          每一段历史，都是一次伟大的航行
+          <span className={styles.subIcon}>⛵</span>
+        </p>
+
+        {/* Quote card - treasure map style */}
         <div className={styles.quoteCard}>
-          <span className={styles.quoteMark}>"</span>
+          <div className={styles.quoteTape} />
+          <span className={styles.quoteMark}>❝</span>
           <p className={styles.quoteText}>{quote.text}</p>
           <p className={styles.quoteAuthor}>—— {quote.author}</p>
         </div>
 
+        {/* Enter button */}
         <button className={styles.enterBtn} onClick={handleEnter}>
-          <span className={styles.btnText}>进入学习</span>
-          <span className={styles.btnArrow}>→</span>
+          <span className={styles.btnSkull}>🏴‍☠️</span>
+          <span className={styles.btnText}>出 航 ！</span>
+          <span className={styles.btnSkull}>⚓</span>
         </button>
+
+        <p className={styles.hint}>点击起航，开启历史探索之旅</p>
       </div>
 
       <div className={styles.footer}>
-        <p>初中历史学科学习平台 · 部编版（统编版）</p>
+        <p>🏴‍☠️ 初中历史学科学习平台 · 部编版（统编版）</p>
       </div>
     </div>
   );
