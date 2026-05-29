@@ -1,0 +1,115 @@
+/* ============================================
+   背景主题 — 上海美术电影制片厂动画风格
+   ============================================ */
+
+/* 默认：水墨山水 — 源自《山水情》《牧笛》的墨韵意境 */
+[data-theme="ink"] {
+  --bg-body: linear-gradient(
+    175deg,
+    #f5f3ee 0%,
+    #ebe8df 15%,
+    #e3dfd4 30%,
+    #dad5c8 50%,
+    #d4cec0 65%,
+    #cfc9b9 80%,
+    #cbc5b5 100%
+  );
+  --bg-body-fixed: #f0ede5;
+  --bg-pattern: url("data:image/svg+xml,%3Csvg width='1200' height='800' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cfilter id='blur'%3E%3CfeGaussianBlur stdDeviation='60'/%3E%3C/filter%3E%3C/defs%3E%3Cellipse cx='200' cy='600' rx='350' ry='180' fill='%23888' opacity='0.06' filter='url(%23blur)'/%3E%3Cellipse cx='900' cy='500' rx='400' ry='200' fill='%23666' opacity='0.05' filter='url(%23blur)'/%3E%3Cellipse cx='600' cy='700' rx='500' ry='150' fill='%23999' opacity='0.04' filter='url(%23blur)'/%3E%3Cpath d='M0 550 Q300 450 600 520 T1200 480 L1200 800 L0 800Z' fill='%23888' opacity='0.06'/%3E%3Cpath d='M0 620 Q400 550 800 600 T1200 560 L1200 800 L0 800Z' fill='%23777' opacity='0.05'/%3E%3Cpath d='M0 700 Q500 650 1000 690 T1200 660 L1200 800 L0 800Z' fill='%23666' opacity='0.04'/%3E%3Ccircle cx='150' cy='300' r='2' fill='%23999' opacity='0.3'/%3E%3Ccircle cx='850' cy='200' r='1.5' fill='%23999' opacity='0.25'/%3E%3Ccircle cx='500' cy='350' r='2.5' fill='%23999' opacity='0.2'/%3E%3C/svg%3E");
+  --surface-alpha: rgba(255,255,255,0.85);
+  --border-alpha: rgba(0,0,0,0.06);
+}
+
+/* 天宫云海 — 源自《大闹天宫》的瑰丽天宫 */
+[data-theme="heaven"] {
+  --bg-body: linear-gradient(
+    180deg,
+    #1a3a5c 0%,
+    #1e4d7b 15%,
+    #2563a0 30%,
+    #2b75b8 50%,
+    #3b82c4 70%,
+    #5a9fd4 85%,
+    #7bb8e0 100%
+  );
+  --bg-body-fixed: #1e4d7b;
+  --bg-pattern: url("data:image/svg+xml,%3Csvg width='1200' height='800' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cfilter id='blur'%3E%3CfeGaussianBlur stdDeviation='40'/%3E%3C/filter%3E%3ClinearGradient id='gold' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23fbbf24'/%3E%3Cstop offset='100%25' stop-color='%23f59e0b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cellipse cx='200' cy='150' rx='180' ry='60' fill='%23fff' opacity='0.08' filter='url(%23blur)'/%3E%3Cellipse cx='700' cy='100' rx='250' ry='80' fill='%23fff' opacity='0.06' filter='url(%23blur)'/%3E%3Cellipse cx='1000' cy='200' rx='200' ry='70' fill='%23fff' opacity='0.07' filter='url(%23blur)'/%3E%3Cellipse cx='500' cy='300' rx='300' ry='90' fill='%23fbbf24' opacity='0.05' filter='url(%23blur)'/%3E%3Cellipse cx='100' cy='450' rx='150' ry='40' fill='%23fff' opacity='0.05' filter='url(%23blur)'/%3E%3Cpath d='M0 500 Q300 400 600 480 T1200 430' fill='none' stroke='%23fbbf24' stroke-width='1' opacity='0.12'/%3E%3C/svg%3E");
+  --surface-alpha: rgba(255,255,255,0.12);
+  --border-alpha: rgba(255,255,255,0.1);
+  --primary: #fbbf24;
+  --primary-light: rgba(251,191,36,0.15);
+  --primary-dark: #f59e0b;
+  --text: #f0ead6;
+  --text-secondary: rgba(240,234,214,0.7);
+  --text-muted: rgba(240,234,214,0.5);
+  --bg: transparent;
+  --surface: rgba(255,255,255,0.1);
+  --border: rgba(255,255,255,0.12);
+  --success: #6ee7b7;
+  --danger: #fca5a5;
+  --warning: #fcd34d;
+}
+
+/* 敦煌神韵 — 源自《九色鹿》的壁画风韵 */
+[data-theme="dunhuang"] {
+  --bg-body: linear-gradient(
+    160deg,
+    #fef3c7 0%,
+    #fde68a 20%,
+    #fcd34d 40%,
+    #fbbf24 55%,
+    #f59e0b 70%,
+    #d97706 85%,
+    #b45309 100%
+  );
+  --bg-body-fixed: #fde68a;
+  --bg-pattern: url("data:image/svg+xml,%3Csvg width='1200' height='800' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cfilter id='blur'%3E%3CfeGaussianBlur stdDeviation='50'/%3E%3C/filter%3E%3Cpattern id='dia' width='60' height='60' patternUnits='userSpaceOnUse'%3E%3Cpath d='M30 0 L60 30 L30 60 L0 30Z' fill='none' stroke='%23b45309' stroke-width='0.5' opacity='0.08'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='1200' height='800' fill='url(%23dia)'/%3E%3Cellipse cx='300' cy='200' rx='300' ry='150' fill='%23d97706' opacity='0.1' filter='url(%23blur)'/%3E%3Cellipse cx='900' cy='500' rx='350' ry='200' fill='%23b45309' opacity='0.08' filter='url(%23blur)'/%3E%3Ccircle cx='150' cy='600' r='300' fill='%23f59e0b' opacity='0.06' filter='url(%23blur)'/%3E%3Cpath d='M0 0 L60 0 M0 60 L60 60 M0 0 L0 60 M60 0 L60 60' stroke='%2392420e' stroke-width='0.3' opacity='0.06'/%3E%3C/svg%3E");
+  --surface-alpha: rgba(255,255,255,0.7);
+  --border-alpha: rgba(139,69,19,0.1);
+  --primary: #b45309;
+  --primary-light: rgba(180,83,9,0.12);
+  --primary-dark: #92400e;
+}
+
+/* 青绿山水 — 源自传统青绿山水画的设色 */
+[data-theme="landscape"] {
+  --bg-body: linear-gradient(
+    170deg,
+    #d4e8d4 0%,
+    #b8d8b8 15%,
+    #a8d0b8 30%,
+    #8ec8a0 50%,
+    #7ab890 70%,
+    #6aad8a 85%,
+    #5a9a7a 100%
+  );
+  --bg-body-fixed: #c8e0c8;
+  --bg-pattern: url("data:image/svg+xml,%3Csvg width='1200' height='800' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cfilter id='blur'%3E%3CfeGaussianBlur stdDeviation='55'/%3E%3C/filter%3E%3C/defs%3E%3Cpath d='M0 750 L300 400 L600 500 L900 350 L1200 450 L1200 800 L0 800Z' fill='%232d6a4f' opacity='0.1' filter='url(%23blur)'/%3E%3Cpath d='M0 650 L250 500 L500 550 L800 420 L1200 500 L1200 800 L0 800Z' fill='%23409b6b' opacity='0.08' filter='url(%23blur)'/%3E%3Cpath d='M0 550 L400 350 L700 450 L1000 300 L1200 400 L1200 800 L0 800Z' fill='%2352b788' opacity='0.06' filter='url(%23blur)'/%3E%3Cellipse cx='800' cy='200' rx='200' ry='100' fill='%2395d5b2' opacity='0.08' filter='url(%23blur)'/%3E%3C/svg%3E");
+  --surface-alpha: rgba(255,255,255,0.78);
+  --border-alpha: rgba(0,80,40,0.07);
+  --primary: #2d6a4f;
+  --primary-light: rgba(45,106,79,0.1);
+  --primary-dark: #1b4332;
+}
+
+/* 剪纸红韵 — 源自剪纸动画的质朴热烈 */
+[data-theme="papercut"] {
+  --bg-body: linear-gradient(
+    175deg,
+    #fef2f2 0%,
+    #fee2e2 15%,
+    #fecaca 30%,
+    #fca5a5 45%,
+    #f87171 60%,
+    #ef4444 75%,
+    #dc2626 90%,
+    #b91c1c 100%
+  );
+  --bg-body-fixed: #fee2e2;
+  --bg-pattern: url("data:image/svg+xml,%3Csvg width='1200' height='800' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cfilter id='blur'%3E%3CfeGaussianBlur stdDeviation='45'/%3E%3C/filter%3E%3C/defs%3E%3Cellipse cx='200' cy='600' rx='350' ry='200' fill='%23dc2626' opacity='0.08' filter='url(%23blur)'/%3E%3Cellipse cx='800' cy='300' rx='400' ry='250' fill='%23b91c1c' opacity='0.06' filter='url(%23blur)'/%3E%3Ccircle cx='600' cy='500' r='300' fill='%23ef4444' opacity='0.05' filter='url(%23blur)'/%3E%3Cpath d='M0 100 L50 150 L100 100 L150 150 L200 100 L250 150 L300 100 L350 150 L400 100 L450 150 L500 100 L550 150 L600 100 L650 150 L700 100 L750 150 L800 100 L850 150 L900 100 L950 150 L1000 100 L1050 150 L1100 100 L1150 150 L1200 100' fill='none' stroke='%23991b1b' stroke-width='0.8' opacity='0.06'/%3E%3C/svg%3E");
+  --surface-alpha: rgba(255,255,255,0.75);
+  --border-alpha: rgba(185,28,28,0.08);
+  --primary: #b91c1c;
+  --primary-light: rgba(185,28,28,0.1);
+  --primary-dark: #991b1b;
+}

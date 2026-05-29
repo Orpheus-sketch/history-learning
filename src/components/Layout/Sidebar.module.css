@@ -1,0 +1,102 @@
+.sidebar {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  background: var(--surface-alpha, var(--surface));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-right: 1px solid var(--border-alpha, var(--border));
+  overflow-y: auto;
+  padding: 16px 0;
+}
+
+.sectionTitle {
+  padding: 8px 20px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.gradeGroup {
+  margin-bottom: 2px;
+}
+
+.gradeBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.15s;
+  text-align: left;
+}
+
+.gradeBtn:hover {
+  background: var(--primary-light);
+}
+
+.expanded {
+  color: var(--primary);
+}
+
+.gradeName {
+  flex: 1;
+}
+
+.arrow {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.periodTag {
+  padding: 0 20px 4px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.unitsList {
+  padding: 4px 0 8px;
+}
+
+.unitLink {
+  display: block;
+  padding: 6px 20px 6px 36px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  transition: all 0.15s;
+  border-left: 3px solid transparent;
+}
+
+.unitLink:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+.unitActive {
+  background: var(--primary-light);
+  color: var(--primary);
+  border-left-color: var(--primary);
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
