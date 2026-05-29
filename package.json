@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node -e \"var f=require('fs');var p='dist/index.html';var h=f.readFileSync(p,'utf8');h=h.replace('BUILD_TAG',Date.now());f.writeFileSync(p,h)\"",
     "preview": "vite preview --host 0.0.0.0",
     "start": "npm run build && npm run preview",
     "share": "npm run build && concurrently \"npm run preview\" \"node scripts/tunnel.mjs\""
