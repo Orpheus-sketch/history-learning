@@ -51,93 +51,117 @@ export default function Welcome() {
 
   return (
     <div className={`${styles.welcome} ${visible ? styles.visible : ''}`}>
-      {/* Ocean waves at bottom */}
+      {/* Wave layers at bottom */}
       <div className={styles.waves}>
         <div className={styles.wave1} />
         <div className={styles.wave2} />
         <div className={styles.wave3} />
+        <div className={styles.wave4} />
       </div>
 
       {/* Floating clouds */}
       <div className={styles.clouds}>
-        {[...Array(6)].map((_, i) => (
+        {[...Array(8)].map((_, i) => (
           <div key={i} className={styles.cloud} style={{
-            top: `${5 + i * 14}%`,
-            left: `${-10 + i * 20}%`,
-            animationDelay: `${i * 3}s`,
-            animationDuration: `${18 + i * 4}s`,
+            top: `${3 + i * 12}%`,
+            left: `${-10 + i * 16}%`,
+            animationDelay: `${i * 2.5}s`,
+            animationDuration: `${20 + i * 3}s`,
+            opacity: 0.3 + (i % 3) * 0.15,
+            transform: `scale(${0.6 + (i % 3) * 0.4})`,
           }} />
         ))}
       </div>
 
       {/* Seagulls */}
       <div className={styles.seagulls}>
-        {[...Array(4)].map((_, i) => (
+        {[...Array(5)].map((_, i) => (
           <div key={i} className={styles.seagull} style={{
-            top: `${8 + i * 10}%`,
-            left: `${-5 + i * 30}%`,
-            animationDelay: `${i * 2}s`,
-            animationDuration: `${8 + i * 3}s`,
+            top: `${10 + i * 15}%`,
+            left: `${-5 + i * 25}%`,
+            animationDelay: `${i * 1.8}s`,
+            animationDuration: `${10 + i * 2}s`,
           }} />
         ))}
       </div>
 
-      {/* Treasure sparkles */}
-      <div className={styles.sparkles}>
-        {[...Array(15)].map((_, i) => (
-          <div key={i} className={styles.sparkle} style={{
+      {/* Rain lines for atmosphere */}
+      <div className={styles.rain}>
+        {[...Array(30)].map((_, i) => (
+          <div key={i} className={styles.drop} style={{
             left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
             animationDelay: `${Math.random() * 4}s`,
+            animationDuration: `${1.5 + Math.random() * 2}s`,
+            opacity: 0.04 + Math.random() * 0.06,
           }} />
         ))}
       </div>
 
       <div className={styles.content}>
-        {/* Compass emblem */}
+        {/* Seal script emblem */}
         <div className={styles.emblem}>
-          <div className={styles.emblemOuter}>
-            <div className={styles.emblemInner}>
-              <span className={styles.emblemChar}>史</span>
-            </div>
+          <div className={styles.emblemRing}>
+            <svg viewBox="0 0 120 120" className={styles.sealSvg}>
+              {/* Outer circle */}
+              <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.4" />
+              <circle cx="60" cy="60" r="50" fill="none" stroke="currentColor" strokeWidth="0.5" opacity="0.25" />
+              {/* Inner decorative ring */}
+              <circle cx="60" cy="60" r="42" fill="none" stroke="currentColor" strokeWidth="0.5" opacity="0.2"
+                strokeDasharray="3 3" />
+
+              {/* Small seal script 史 character */}
+              <g transform="translate(60,60)" fill="none" stroke="currentColor" strokeWidth="2.8"
+                strokeLinecap="round" strokeLinejoin="round">
+                {/* Top: 中-like shape */}
+                <rect x="-8" y="-32" width="16" height="18" rx="2" opacity="0.9" />
+                <line x1="0" y1="-32" x2="0" y2="-48" opacity="0.9" />
+                <line x1="0" y1="-48" x2="-6" y2="-54" opacity="0.75" />
+                <line x1="0" y1="-48" x2="6" y2="-54" opacity="0.75" />
+
+                {/* Middle: horizontal separator */}
+                <path d="M-20,-10 Q0,-7 20,-10" opacity="0.5" />
+
+                {/* Bottom: 又-like shape (hand) */}
+                <path d="M-12,-6 Q-20,8 -10,18 Q-5,22 0,24" opacity="0.9" />
+                <path d="M12,-6 Q20,8 10,18 Q5,22 0,24" opacity="0.9" />
+                <line x1="0" y1="-14" x2="0" y2="-4" opacity="0.7" />
+
+                {/* Bottom stroke */}
+                <path d="M-8,16 Q0,22 8,16" opacity="0.5" />
+              </g>
+
+              {/* Small dots around the ring */}
+              <circle cx="60" cy="12" r="1.5" fill="currentColor" opacity="0.3" />
+              <circle cx="60" cy="108" r="1.5" fill="currentColor" opacity="0.3" />
+              <circle cx="12" cy="60" r="1.5" fill="currentColor" opacity="0.3" />
+              <circle cx="108" cy="60" r="1.5" fill="currentColor" opacity="0.3" />
+            </svg>
           </div>
-          <div className={styles.emblemRope} />
         </div>
 
-        {/* Sound effect */}
-        <div className={styles.soundFx}>ドン!!</div>
+        <h1 className={styles.title}>歷史學習</h1>
+        <p className={styles.subtitle}>穿越時空 · 與文明對話</p>
 
-        <h1 className={styles.title}>
-          <span className={styles.titleLine1}>歷史學習</span>
-          <span className={styles.titleLine2}>~ 穿越時空的大冒險 ~</span>
-        </h1>
-
-        <p className={styles.subtitle}>
-          <span className={styles.subIcon}>⚓</span>
-          每一段历史，都是一次伟大的航行
-          <span className={styles.subIcon}>⛵</span>
-        </p>
-
-        {/* Quote card - treasure map style */}
         <div className={styles.quoteCard}>
-          <div className={styles.quoteTape} />
-          <span className={styles.quoteMark}>❝</span>
+          <span className={styles.quoteMark}>「</span>
           <p className={styles.quoteText}>{quote.text}</p>
           <p className={styles.quoteAuthor}>—— {quote.author}</p>
         </div>
 
-        {/* Enter button */}
         <button className={styles.enterBtn} onClick={handleEnter}>
-          <span className={styles.btnSkull}>🏴‍☠️</span>
-          <span className={styles.btnText}>出 航 ！</span>
-          <span className={styles.btnSkull}>⚓</span>
+          <span className={styles.btnText}>進 入 學 習</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={styles.btnArrow}>
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
         </button>
 
-        <p className={styles.hint}>点击起航，开启历史探索之旅</p>
+        <p className={styles.hint}>點擊進入，開啓歷史探索之旅</p>
       </div>
 
       <div className={styles.footer}>
-        <p>🏴‍☠️ 初中历史学科学习平台 · 部编版（统编版）</p>
+        <p>初中歷史學科學習平台 · 部編版（統編版）</p>
       </div>
     </div>
   );
