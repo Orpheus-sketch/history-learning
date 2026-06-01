@@ -18,7 +18,7 @@ import Progress from './pages/Progress/Progress';
 
 function App() {
   return (
-    <BrowserRouter basename="/history-learning">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<SubjectSelect />} />
         <Route path="/welcome" element={<Welcome />} />
