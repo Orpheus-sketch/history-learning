@@ -1,38 +1,56 @@
-function getKey(accountId) {
-  return `hl-progress-${accountId}`;
+function getKey(subject, accountId) {
+  return `hl-progress-${subject}-${accountId}`;
 }
 
-function getData(accountId) {
-  const raw = localStorage.getItem(getKey(accountId));
+// One-time migration: copy old history progress (hl-progress-{accountId})
+// to new format (hl-progress-history-{accountId})
+function migrateHistoryProgress(subject, accountId) {
+  if (subject !== 'history' || !accountId) return;
+  const oldKey = `hl-progress-${accountId}`;
+  const newKey = `hl-progress-history-${accountId}`;
+  const oldData = localStorage.getItem(oldKey);
+  const newData = localStorage.getItem(newKey);
+  if (oldData && !newData) {
+    localStorage.setItem(newKey, oldData);
+  }
+}
+
+function getData(subject, accountId) {
+  if (!accountId) {
+    return { completedLessons: [], quizHistory: [], weakPoints: [] };
+  }
+  migrateHistoryProgress(subject, accountId);
+  const raw = localStorage.getItem(getKey(subject, accountId));
   if (!raw) {
     return { completedLessons: [], quizHistory: [], weakPoints: [] };
   }
   return JSON.parse(raw);
 }
 
-function saveData(accountId, data) {
-  localStorage.setItem(getKey(accountId), JSON.stringify(data));
+function saveData(subject, accountId, data) {
+  if (!accountId) return;
+  localStorage.setItem(getKey(subject, accountId), JSON.stringify(data));
 }
 
-export function markLessonCompleted(accountId, lessonId) {
-  const data = getData(accountId);
+export function markLessonCompleted(accountId, lessonId, subject = 'history') {
+  const data = getData(subject, accountId);
   if (!data.completedLessons.includes(lessonId)) {
     data.completedLessons.push(lessonId);
-    saveData(accountId, data);
+    saveData(subject, accountId, data);
   }
 }
 
-export function isLessonCompleted(accountId, lessonId) {
-  const data = getData(accountId);
+export function isLessonCompleted(accountId, lessonId, subject = 'history') {
+  const data = getData(subject, accountId);
   return data.completedLessons.includes(lessonId);
 }
 
-export function getCompletedLessons(accountId) {
-  return getData(accountId).completedLessons;
+export function getCompletedLessons(accountId, subject = 'history') {
+  return getData(subject, accountId).completedLessons;
 }
 
-export function saveQuizResult(accountId, result) {
-  const data = getData(accountId);
+export function saveQuizResult(accountId, result, subject = 'history') {
+  const data = getData(subject, accountId);
   data.quizHistory.push({
     date: new Date().toISOString(),
     score: result.score,
@@ -50,19 +68,19 @@ export function saveQuizResult(accountId, result) {
     });
   }
 
-  saveData(accountId, data);
+  saveData(subject, accountId, data);
 }
 
-export function getQuizHistory(accountId) {
-  return getData(accountId).quizHistory;
+export function getQuizHistory(accountId, subject = 'history') {
+  return getData(subject, accountId).quizHistory;
 }
 
-export function getWeakPoints(accountId) {
-  return getData(accountId).weakPoints;
+export function getWeakPoints(accountId, subject = 'history') {
+  return getData(subject, accountId).weakPoints;
 }
 
-export function getProgressStats(accountId) {
-  const data = getData(accountId);
+export function getProgressStats(accountId, subject = 'history') {
+  const data = getData(subject, accountId);
   return {
     completedLessons: data.completedLessons,
     quizHistory: data.quizHistory,
@@ -70,6 +88,7 @@ export function getProgressStats(accountId) {
   };
 }
 
-export function resetProgress(accountId) {
-  localStorage.removeItem(getKey(accountId));
+export function resetProgress(accountId, subject = 'history') {
+  if (!accountId) return;
+  localStorage.removeItem(getKey(subject, accountId));
 }

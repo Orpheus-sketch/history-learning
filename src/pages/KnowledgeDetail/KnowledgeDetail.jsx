@@ -4,24 +4,30 @@ import ReactMarkdown from 'react-markdown';
 import { fetchLesson } from '../../api';
 import { markLessonCompleted, isLessonCompleted } from '../../utils/progress';
 import { useAccount } from '../../context/AccountContext';
-import WikipediaImage from '../../components/WikipediaImage/WikipediaImage';
+import { useSubject } from '../../context/SubjectContext';
+import WikipediaImage, { preloadImages } from '../../components/WikipediaImage/WikipediaImage';
 import styles from './KnowledgeDetail.module.css';
 
 export default function KnowledgeDetail() {
   const { activeAccount } = useAccount();
+  const { subject } = useSubject();
   const { lessonId } = useParams();
   const [lesson, setLesson] = useState(null);
   const [completed, setCompleted] = useState(false);
 
   useEffect(() => {
-    fetchLesson(lessonId).then((data) => {
+    fetchLesson(lessonId, subject).then((data) => {
       setLesson(data);
-      setCompleted(isLessonCompleted(activeAccount?.id, data.id));
+      setCompleted(isLessonCompleted(activeAccount?.id, data.id, subject));
+      // Preload all images for this lesson
+      if (data.images) {
+        preloadImages(data.images);
+      }
     });
-  }, [lessonId]);
+  }, [lessonId, subject]);
 
   const handleComplete = () => {
-    markLessonCompleted(activeAccount?.id, Number(lessonId));
+    markLessonCompleted(activeAccount?.id, Number(lessonId), subject);
     setCompleted(true);
   };
 
@@ -43,6 +49,7 @@ export default function KnowledgeDetail() {
               caption={img.caption}
               source={img.source}
               lang="zh"
+              directUrl={img.url || null}
             />
           ))}
         </div>

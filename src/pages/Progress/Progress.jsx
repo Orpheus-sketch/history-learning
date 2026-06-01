@@ -6,12 +6,14 @@ import {
 import { fetchGrades, fetchUnits, fetchLessons, fetchAllGrades } from '../../api';
 import { getProgressStats } from '../../utils/progress';
 import { useAccount } from '../../context/AccountContext';
+import { useSubject } from '../../context/SubjectContext';
 import styles from './Progress.module.css';
 
 const COLORS = ['#2563eb', '#16a34a', '#f59e0b', '#dc2626', '#8b5cf6', '#06b6d4'];
 
 export default function Progress() {
   const { activeAccount } = useAccount();
+  const { subject } = useSubject();
   const [gradeStats, setGradeStats] = useState([]);
   const [quizHistory, setQuizHistory] = useState([]);
   const [learningPct, setLearningPct] = useState(0);
@@ -19,17 +21,17 @@ export default function Progress() {
 
   useEffect(() => {
     const load = async () => {
-      const grades = await fetchAllGrades();
-      const stats = getProgressStats(activeAccount?.id);
+      const grades = await fetchAllGrades(subject);
+      const stats = getProgressStats(activeAccount?.id, subject);
 
       const gradeData = [];
       let totalLessonsCount = 0;
       for (const g of grades.sort((a, b) => a.order - b.order)) {
-        const units = await fetchUnits(g.id);
+        const units = await fetchUnits(g.id, subject);
         let lessonCount = 0;
         let completedCount = 0;
         for (const u of units) {
-          const lessons = await fetchLessons(u.id);
+          const lessons = await fetchLessons(u.id, subject);
           lessonCount += lessons.length;
           completedCount += lessons.filter((l) =>
             stats.completedLessons.includes(l.id)
@@ -60,7 +62,7 @@ export default function Progress() {
       setLoading(false);
     };
     load();
-  }, []);
+  }, [subject, activeAccount]);
 
   if (loading) return <p className={styles.loading}>加载中...</p>;
 

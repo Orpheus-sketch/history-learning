@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { fetchLessons, fetchUnits, fetchAllGrades } from '../../api';
+import { useSubject } from '../../context/SubjectContext';
 import styles from './TimelinePage.module.css';
 
 function parseYear(str) {
@@ -73,16 +74,18 @@ function formatYearLabel(parsed, original) {
 }
 
 export default function TimelinePage() {
+  const { subject } = useSubject();
   const [events, setEvents] = useState([]);
   const [filter, setFilter] = useState('all'); // 'all' | 'china' | 'world'
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    if (subject !== 'history') return;
     const load = async () => {
       const [lessons, units, grades] = await Promise.all([
-        fetchLessons(),
-        fetchUnits(),
-        fetchAllGrades(),
+        fetchLessons(undefined, subject),
+        fetchUnits(undefined, subject),
+        fetchAllGrades(subject),
       ]);
 
       // Build unitId → gradeId map
@@ -121,7 +124,12 @@ export default function TimelinePage() {
       setLoading(false);
     };
     load();
-  }, []);
+  }, [subject]);
+
+  // Timeline only available for history
+  if (subject !== 'history') {
+    return <Navigate to="/home" replace />;
+  }
 
   const filteredEvents = filter === 'all'
     ? events

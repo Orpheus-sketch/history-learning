@@ -33,6 +33,58 @@
   color: var(--primary);
 }
 
+/* Subject Tabs */
+.subjectTabs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: 24px;
+  flex-shrink: 0;
+}
+
+.subjectTab {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 14px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.subjectTab:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--surface);
+}
+
+.subjectTabActive {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+  font-weight: 600;
+}
+
+.subjectTabActive:hover {
+  background: var(--primary-dark);
+  color: #fff;
+}
+
+.subjectTabIcon {
+  font-size: 1rem;
+}
+
+.subjectTabName {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
 .nav {
   display: flex;
   gap: 4px;
@@ -193,7 +245,16 @@
     padding: 0 12px;
   }
   .brand {
-    margin-right: 16px;
+    margin-right: 8px;
+  }
+  .subjectTabs {
+    margin-right: 8px;
+  }
+  .subjectTab {
+    padding: 4px 10px;
+  }
+  .subjectTabName {
+    display: none;
   }
   .label {
     display: none;

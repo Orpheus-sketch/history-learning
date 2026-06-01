@@ -1,37 +1,57 @@
-import db from '../db.json';
+// Dynamic per-subject database loading
+const dbCache = {};
+
+const subjectModules = {
+  history: () => import('../db-history.json'),
+  geography: () => import('../db-geography.json'),
+  biology: () => import('../db-biology.json'),
+};
+
+async function loadDb(subject = 'history') {
+  if (!dbCache[subject]) {
+    const mod = await subjectModules[subject]();
+    dbCache[subject] = mod.default;
+  }
+  return dbCache[subject];
+}
 
 function delay(ms = 50) {
   return new Promise((r) => setTimeout(r, ms));
 }
 
 // Simulate async API with local data (keeps async signature for compatibility)
-export async function fetchGrades() {
+export async function fetchGrades(subject = 'history') {
   await delay();
+  const db = await loadDb(subject);
   return [...db.grades].sort((a, b) => a.order - b.order);
 }
 
-export async function fetchUnits(gradeId) {
+export async function fetchUnits(gradeId, subject = 'history') {
   await delay();
+  const db = await loadDb(subject);
   const units = gradeId
     ? db.units.filter((u) => u.gradeId === gradeId)
     : [...db.units];
   return units.sort((a, b) => a.order - b.order);
 }
 
-export async function fetchLessons(unitId) {
+export async function fetchLessons(unitId, subject = 'history') {
   await delay();
+  const db = await loadDb(subject);
   return unitId
     ? db.lessons.filter((l) => l.unitId === unitId)
     : [...db.lessons];
 }
 
-export async function fetchLesson(id) {
+export async function fetchLesson(id, subject = 'history') {
   await delay();
+  const db = await loadDb(subject);
   return db.lessons.find((l) => l.id === Number(id)) || null;
 }
 
-export async function fetchQuestions({ gradeId, unitId, lessonId, type, difficulty } = {}) {
+export async function fetchQuestions({ gradeId, unitId, lessonId, type, difficulty } = {}, subject = 'history') {
   await delay();
+  const db = await loadDb(subject);
   let questions = [...db.questions];
 
   if (lessonId) {
@@ -56,7 +76,8 @@ export async function fetchQuestions({ gradeId, unitId, lessonId, type, difficul
   return questions;
 }
 
-export async function fetchAllGrades() {
+export async function fetchAllGrades(subject = 'history') {
   await delay();
+  const db = await loadDb(subject);
   return [...db.grades].sort((a, b) => a.order - b.order);
 }

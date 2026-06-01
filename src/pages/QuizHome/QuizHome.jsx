@@ -1,19 +1,20 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { fetchGrades } from '../../api';
-import GradeFilter from '../../components/GradeFilter/GradeFilter';
+import { useSubject } from '../../context/SubjectContext';
 import styles from './QuizHome.module.css';
 
 export default function QuizHome() {
   const navigate = useNavigate();
-  const [grades, setGrades] = useState([]);
+  const { subject } = useSubject();
   const [gradeId, setGradeId] = useState(0);
   const [questionType, setQuestionType] = useState('all');
   const [count, setCount] = useState(10);
+  const [grades, setGrades] = useState([]);
 
   useEffect(() => {
-    fetchGrades().then((d) => setGrades(d.sort((a, b) => a.order - b.order)));
-  }, []);
+    fetchGrades(subject).then((d) => setGrades(d.sort((a, b) => a.order - b.order))).catch(() => {});
+  }, [subject]);
 
   const handleStart = () => {
     const params = new URLSearchParams();
@@ -31,7 +32,17 @@ export default function QuizHome() {
       <div className={styles.config}>
         <div className={styles.field}>
           <label className={styles.label}>选择年级</label>
-          <GradeFilter value={gradeId} onChange={setGradeId} />
+          <div className={styles.filter}>
+            {[{ id: 0, name: '全部年级' }, ...grades].map((g) => (
+              <button
+                key={g.id}
+                className={`${styles.optBtn} ${gradeId === g.id ? styles.optActive : ''}`}
+                onClick={() => setGradeId(g.id)}
+              >
+                {g.name}
+              </button>
+            ))}
+          </div>
         </div>
 
         <div className={styles.field}>

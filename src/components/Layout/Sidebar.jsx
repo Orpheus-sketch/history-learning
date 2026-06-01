@@ -1,17 +1,22 @@
 import { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { fetchGrades, fetchUnits } from '../../api';
+import { useSubject } from '../../context/SubjectContext';
 import styles from './Sidebar.module.css';
 
 export default function Sidebar() {
+  const { subject } = useSubject();
   const [grades, setGrades] = useState([]);
   const [expandedGrade, setExpandedGrade] = useState(null);
   const [unitsMap, setUnitsMap] = useState({});
   const location = useLocation();
 
   useEffect(() => {
-    fetchGrades().then((data) => setGrades(data.sort((a, b) => a.order - b.order)));
-  }, []);
+    setGrades([]);
+    setExpandedGrade(null);
+    setUnitsMap({});
+    fetchGrades(subject).then((data) => setGrades(data.sort((a, b) => a.order - b.order)));
+  }, [subject]);
 
   const toggleGrade = async (gradeId) => {
     if (expandedGrade === gradeId) {
@@ -20,7 +25,7 @@ export default function Sidebar() {
     }
     setExpandedGrade(gradeId);
     if (!unitsMap[gradeId]) {
-      const units = await fetchUnits(gradeId);
+      const units = await fetchUnits(gradeId, subject);
       setUnitsMap((prev) => ({ ...prev, [gradeId]: units.sort((a, b) => a.order - b.order) }));
     }
   };

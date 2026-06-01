@@ -1703,7 +1703,7 @@
       "id": 1,
       "lessonId": 1,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "我国境内目前已确认的最早的古人类是？",
       "options": [
         "北京人",
@@ -1718,7 +1718,7 @@
       "id": 2,
       "lessonId": 1,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "北京人生活在距今约多少年前？",
       "options": [
         "约170万年",
@@ -1733,7 +1733,7 @@
       "id": 3,
       "lessonId": 1,
       "type": "choice",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "北京人使用的石器属于？",
       "options": [
         "磨制石器",
@@ -1748,7 +1748,7 @@
       "id": 4,
       "lessonId": 1,
       "type": "choice",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "山顶洞人已经掌握的技术不包括？",
       "options": [
         "磨光技术",
@@ -1763,16 +1763,16 @@
       "id": 5,
       "lessonId": 1,
       "type": "judge",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "火的使用是人类进化史上的里程碑。",
-      "answer": 0,
+      "answer": false,
       "explanation": "正确。火的使用改善了人类的生存条件，是人类进化史上的重要里程碑。"
     },
     {
       "id": 6,
       "lessonId": 2,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "河姆渡人种植的农作物是？",
       "options": [
         "粟",
@@ -1787,7 +1787,7 @@
       "id": 7,
       "lessonId": 2,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "半坡居民居住的房屋类型是？",
       "options": [
         "干栏式建筑",
@@ -1802,16 +1802,16 @@
       "id": 8,
       "lessonId": 2,
       "type": "judge",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "中国是世界上最早种植水稻、粟和黍的国家。",
-      "answer": 0,
+      "answer": false,
       "explanation": "正确。长江中下游先民最早栽培水稻，北方地区先民最早栽培粟和黍。"
     },
     {
       "id": 9,
       "lessonId": 2,
       "type": "choice",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "原始农业兴起和发展的标志不包括？",
       "options": [
         "农作物种植",
@@ -1826,7 +1826,7 @@
       "id": 10,
       "lessonId": 3,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "被尊为中华民族人文初祖的是？",
       "options": [
         "尧和舜",
@@ -1841,7 +1841,7 @@
       "id": 11,
       "lessonId": 3,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "禅让制是指将部落联盟首领之位传给？",
       "options": [
         "自己的儿子",
@@ -1856,16 +1856,16 @@
       "id": 12,
       "lessonId": 3,
       "type": "judge",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "大禹治水采用的是堵截的方法。",
-      "answer": 1,
+      "answer": true,
       "explanation": "错误。大禹采用疏导的方法治水，而不是堵截。"
     },
     {
       "id": 13,
       "lessonId": 4,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "中国历史上第一个王朝是？",
       "options": [
         "商朝",
@@ -1880,7 +1880,7 @@
       "id": 14,
       "lessonId": 4,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "世袭制代替禅让制的标志是？",
       "options": [
         "禹建立夏朝",
@@ -1895,7 +1895,7 @@
       "id": 15,
       "lessonId": 4,
       "type": "choice",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "西周实行的重要政治制度是？",
       "options": [
         "郡县制",
@@ -1910,7 +1910,7 @@
       "id": 16,
       "lessonId": 4,
       "type": "choice",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "牧野之战中，周武王击败的是？",
       "options": [
         "夏桀",
@@ -1925,16 +1925,16 @@
       "id": 17,
       "lessonId": 4,
       "type": "judge",
-      "difficulty": 3,
+      "difficulty": "hard",
       "stem": "国人暴动发生在商朝末年。",
-      "answer": 1,
+      "answer": true,
       "explanation": "错误。国人暴动发生在公元前841年的西周时期，周厉王暴虐引发。"
     },
     {
       "id": 18,
       "lessonId": 5,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "迄今世界上出土的最重的青铜器是？",
       "options": [
         "毛公鼎",
@@ -1949,7 +1949,7 @@
       "id": 19,
       "lessonId": 5,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "我国有文字可考的历史从哪个朝代开始？",
       "options": [
         "夏朝",
@@ -1964,16 +1964,16 @@
       "id": 20,
       "lessonId": 5,
       "type": "judge",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "甲骨文是1899年由王懿荣首次发现的。",
-      "answer": 0,
+      "answer": false,
       "explanation": "正确。1899年，清朝官员王懿荣首次发现甲骨文。"
     },
     {
       "id": 21,
       "lessonId": 6,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "儒家学派的创始人是？",
       "options": [
         "老子",
@@ -1988,7 +1988,7 @@
       "id": 22,
       "lessonId": 6,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "主张\"兼爱\"\"非攻\"的学派是？",
       "options": [
         "儒家",
@@ -2003,7 +2003,7 @@
       "id": 23,
       "lessonId": 6,
       "type": "choice",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "韩非是哪一学派的代表人物？",
       "options": [
         "儒家",
@@ -2018,7 +2018,7 @@
       "id": 24,
       "lessonId": 6,
       "type": "choice",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "\"民为贵，社稷次之，君为轻\"是谁提出的？",
       "options": [
         "孔子",
@@ -2033,16 +2033,16 @@
       "id": 25,
       "lessonId": 6,
       "type": "judge",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "《孙子兵法》是世界上最早的兵书。",
-      "answer": 0,
+      "answer": false,
       "explanation": "正确。《孙子兵法》由兵家代表人物孙武所著，是世界上最早的兵书。"
     },
     {
       "id": 26,
       "lessonId": 7,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "秦统一六国是在哪一年？",
       "options": [
         "前230年",
@@ -2057,7 +2057,7 @@
       "id": 27,
       "lessonId": 7,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "秦朝在地方推行什么制度？",
       "options": [
         "分封制",
@@ -2072,7 +2072,7 @@
       "id": 28,
       "lessonId": 7,
       "type": "choice",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "秦朝统一后的标准货币是？",
       "options": [
         "刀币",
@@ -2087,16 +2087,16 @@
       "id": 29,
       "lessonId": 7,
       "type": "judge",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "秦始皇修筑的长城东到辽东，西到临洮。",
-      "answer": 0,
+      "answer": false,
       "explanation": "正确。秦始皇派蒙恬修筑万里长城，西起临洮，东到辽东。"
     },
     {
       "id": 30,
       "lessonId": 8,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "中国历史上第一次大规模的农民起义是？",
       "options": [
         "刘邦起义",
@@ -2111,7 +2111,7 @@
       "id": 31,
       "lessonId": 8,
       "type": "choice",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "巨鹿之战中，消灭秦军主力的是？",
       "options": [
         "刘邦",
@@ -2126,16 +2126,16 @@
       "id": 32,
       "lessonId": 8,
       "type": "judge",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "刘邦和项羽争夺帝位的战争被称为\"楚汉之争\"。",
-      "answer": 0,
+      "answer": false,
       "explanation": "正确。秦朝灭亡后，刘邦和项羽进行了四年的楚汉之争。"
     },
     {
       "id": 33,
       "lessonId": 9,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "汉武帝接受谁的建议\"罢黜百家，独尊儒术\"？",
       "options": [
         "主父偃",
@@ -2150,7 +2150,7 @@
       "id": 34,
       "lessonId": 9,
       "type": "choice",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "\"推恩令\"的建议者是？",
       "options": [
         "董仲舒",
@@ -2165,16 +2165,16 @@
       "id": 35,
       "lessonId": 9,
       "type": "judge",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "漠北战役发生在公元前119年，卫青、霍去病大败匈奴。",
-      "answer": 0,
+      "answer": false,
       "explanation": "正确。公元前119年的漠北战役中，卫青、霍去病大败匈奴。"
     },
     {
       "id": 36,
       "lessonId": 10,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "张骞第一次出使西域的目的是？",
       "options": [
         "开辟丝绸之路",
@@ -2189,7 +2189,7 @@
       "id": 37,
       "lessonId": 10,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "丝绸之路的起点是？",
       "options": [
         "洛阳",
@@ -2204,7 +2204,7 @@
       "id": 38,
       "lessonId": 10,
       "type": "choice",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "下列哪项不是从西域传入中原的？",
       "options": [
         "葡萄",
@@ -2219,25 +2219,25 @@
       "id": 39,
       "lessonId": 10,
       "type": "judge",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "公元前60年，西汉设置西域都护，标志着今新疆地区开始隶属中央政权。",
-      "answer": 0,
+      "answer": false,
       "explanation": "正确。公元前60年，西汉设置西域都护，标志着今新疆地区开始隶属中央政权管辖。"
     },
     {
       "id": 40,
       "lessonId": 10,
       "type": "judge",
-      "difficulty": 3,
+      "difficulty": "hard",
       "stem": "汉武帝时期开辟了\"海上丝绸之路\"，最远到达印度半岛南端和锡兰。",
-      "answer": 0,
+      "answer": false,
       "explanation": "正确。汉武帝大力开辟海上交通，形成了\"海上丝绸之路\"，最远到达印度半岛南端和锡兰（今斯里兰卡）。"
     },
     {
       "id": 41,
       "lessonId": 1,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "北京人使用___石器。",
       "answer": "打制",
       "explanation": "北京人使用打制石器（旧石器），还没有掌握磨制技术。"
@@ -2246,7 +2246,7 @@
       "id": 42,
       "lessonId": 1,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "元谋人是我国境内目前已确认的最早的古人类，距今约___万年。",
       "answer": "170",
       "explanation": "元谋人距今约170万年，发现于云南省元谋县。"
@@ -2255,7 +2255,7 @@
       "id": 43,
       "lessonId": 2,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "河姆渡人种植的农作物是___。",
       "answer": "水稻",
       "explanation": "河姆渡人生活在长江流域，种植水稻，是世界上最早种植水稻的地区之一。"
@@ -2264,7 +2264,7 @@
       "id": 44,
       "lessonId": 2,
       "type": "fill",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "半坡居民居住的房屋是___式圆形房屋。",
       "answer": "半地穴",
       "explanation": "半坡居民住半地穴式圆形房屋，适应北方寒冷干燥的气候。"
@@ -2273,7 +2273,7 @@
       "id": 45,
       "lessonId": 3,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "炎帝和黄帝被尊为中华民族的___。",
       "answer": "人文初祖",
       "explanation": "后人尊崇炎帝和黄帝为中华民族的人文初祖。"
@@ -2282,7 +2282,7 @@
       "id": 46,
       "lessonId": 4,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "约公元前2070年，___建立夏王朝，这是中国历史上第一个王朝。",
       "answer": "禹",
       "explanation": "禹建立夏朝，标志着中国早期国家的产生。"
@@ -2291,7 +2291,7 @@
       "id": 47,
       "lessonId": 5,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "___是迄今世界上出土的最重的青铜器。",
       "answer": "司母戊鼎",
       "explanation": "司母戊鼎重达832.84千克，是迄今世界上出土的最重的青铜器。"
@@ -2300,7 +2300,7 @@
       "id": 48,
       "lessonId": 6,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "儒家学派的创始人是___。",
       "answer": "孔子",
       "explanation": "孔子，名丘，字仲尼，是儒家学派的创始人，伟大的思想家和教育家。"
@@ -2309,7 +2309,7 @@
       "id": 49,
       "lessonId": 7,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "秦朝在地方推行___制，加强了中央对地方的控制。",
       "answer": "郡县",
       "explanation": "秦朝废除了分封制，在地方推行郡县制，全国分为36郡。"
@@ -2318,7 +2318,7 @@
       "id": 50,
       "lessonId": 8,
       "type": "fill",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "公元前209年，陈胜、吴广在___发动起义。",
       "answer": "大泽乡",
       "explanation": "陈胜、吴广在大泽乡发动起义，是中国历史上第一次大规模的农民起义。"
@@ -2327,7 +2327,7 @@
       "id": 51,
       "lessonId": 9,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "汉武帝接受董仲舒的建议，\"___，独尊儒术\"。",
       "answer": "罢黜百家",
       "explanation": "汉武帝\"罢黜百家，独尊儒术\"，使儒学成为中国封建社会的主流意识形态。"
@@ -2336,7 +2336,7 @@
       "id": 52,
       "lessonId": 10,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "丝绸之路从___出发，经河西走廊通往中亚、西亚和欧洲。",
       "answer": "长安",
       "explanation": "丝绸之路的起点是长安（今西安），是古代东西方往来的大动脉。"
@@ -2345,7 +2345,7 @@
       "id": 53,
       "lessonId": 1,
       "type": "short",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "简述火的使用对早期人类的重要意义。",
       "answer": "火可以烧烤食物，使食物易于消化吸收，促进人类体质发展；火可以防寒取暖，帮助人类在寒冷地区生存；火可以照明，方便夜间活动；火可以驱兽，保障人类安全。火的使用改善了人类的生存条件，是人类进化史上的里程碑。",
       "explanation": "北京人和山顶洞人都已学会使用火，火的使用是早期人类进化的重要标志。"
@@ -2354,7 +2354,7 @@
       "id": 54,
       "lessonId": 2,
       "type": "short",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "比较河姆渡人和半坡居民生活方式的异同。",
       "answer": "不同点：河姆渡人（长江流域）住干栏式建筑，种植水稻，使用骨耜；半坡居民（黄河流域）住半地穴式房屋，种植粟，制作彩陶。相同点：都使用磨制石器，都饲养家畜（猪、狗），都过定居生活，都属新石器时代。差异主要由自然环境不同导致。",
       "explanation": "南北方自然环境的差异导致了两种不同类型的农耕文明。"
@@ -2363,7 +2363,7 @@
       "id": 55,
       "lessonId": 6,
       "type": "short",
-      "difficulty": 3,
+      "difficulty": "hard",
       "stem": "简述百家争鸣出现的历史背景及主要学派主张。",
       "answer": "背景：战国时期，旧的社会制度进一步瓦解，新的社会制度逐步确立，社会发生急剧变化。主要学派：儒家（孟子主张仁政、民贵君轻，荀子主张礼治）、墨家（墨子主张兼爱非攻，提倡节俭）、道家（庄子主张顺应自然和民心）、法家（韩非主张以法治国，建立中央集权专制统治）。百家争鸣促进了思想和学术的繁荣。",
       "explanation": "百家争鸣是中国古代第一次思想文化发展的高峰。"
@@ -2372,7 +2372,7 @@
       "id": 56,
       "lessonId": 7,
       "type": "short",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "秦始皇为巩固统一采取了哪些措施？",
       "answer": "政治：创立大一统中央集权制度，皇帝总揽大权，中央设丞相、太尉、御史大夫，地方推行郡县制。经济文化：统一文字（小篆）、统一货币（圆形方孔半两钱）、统一度量衡、统一车轨。军事：派蒙恬北击匈奴，修筑万里长城。",
       "explanation": "秦始皇的统一措施对中国历史产生了深远影响。"
@@ -2381,7 +2381,7 @@
       "id": 57,
       "lessonId": 10,
       "type": "short",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "简述丝绸之路开辟的历史意义。",
       "answer": "丝绸之路是古代东西方往来的大动脉，促进了中国同其他国家和地区的贸易与文化交流。从中国输出的主要有丝绸、漆器、开渠凿井技术等；从西域传入的主要有核桃、葡萄、石榴、苜蓿、良种马等。丝绸之路加强了中外联系，推动了世界文明的发展。",
       "explanation": "丝绸之路对促进东西方文化交流起到了重要作用，至今仍有深远影响。"
@@ -2390,7 +2390,7 @@
       "id": 58,
       "lessonId": 11,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "隋朝统一全国是在哪一年？",
       "options": [
         "581年",
@@ -2405,7 +2405,7 @@
       "id": 59,
       "lessonId": 11,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "大运河以___为中心，北达涿郡，南抵余杭。",
       "answer": "洛阳",
       "explanation": "大运河以洛阳为中心，连接五大水系，全长两千多千米。"
@@ -2414,16 +2414,16 @@
       "id": 60,
       "lessonId": 11,
       "type": "judge",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "隋炀帝时设立进士科，标志着科举制的正式诞生。",
-      "answer": 0,
+      "answer": false,
       "explanation": "正确。隋炀帝设立进士科，科举制正式诞生。"
     },
     {
       "id": 61,
       "lessonId": 12,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "唐太宗的年号是？",
       "options": [
         "开元",
@@ -2438,7 +2438,7 @@
       "id": 62,
       "lessonId": 12,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "唐太宗时，___是最著名的谏臣，敢于直言进谏。",
       "answer": "魏征",
       "explanation": "魏征以敢于直言进谏著称，唐太宗把他比作一面镜子。"
@@ -2447,7 +2447,7 @@
       "id": 63,
       "lessonId": 12,
       "type": "choice",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "开元盛世是哪个皇帝时期的治世局面？",
       "options": [
         "唐太宗",
@@ -2462,7 +2462,7 @@
       "id": 64,
       "lessonId": 13,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "被北方各族尊奉为\"天可汗\"的是？",
       "options": [
         "隋文帝",
@@ -2477,7 +2477,7 @@
       "id": 65,
       "lessonId": 13,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "被称为\"诗仙\"的唐代诗人是？",
       "options": [
         "杜甫",
@@ -2492,7 +2492,7 @@
       "id": 66,
       "lessonId": 13,
       "type": "fill",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "文成公主入藏嫁给了吐蕃赞普___。",
       "answer": "松赞干布",
       "explanation": "松赞干布统一吐蕃各部，迎娶文成公主，促进了汉藏经济文化交流。"
@@ -2501,7 +2501,7 @@
       "id": 67,
       "lessonId": 14,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "赵匡胤通过什么事件建立了北宋？",
       "options": [
         "玄武门之变",
@@ -2516,16 +2516,16 @@
       "id": 68,
       "lessonId": 14,
       "type": "judge",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "宋朝实行重文轻武政策。",
-      "answer": 0,
+      "answer": false,
       "explanation": "正确。宋朝实行重文轻武政策，抑制武将，提升文官地位。"
     },
     {
       "id": 69,
       "lessonId": 15,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "被尊称为\"成吉思汗\"的是？",
       "options": [
         "忽必烈",
@@ -2540,7 +2540,7 @@
       "id": 70,
       "lessonId": 15,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "元朝实行___制度，成为后世省级行政区的雏形。",
       "answer": "行省",
       "explanation": "元朝在地方设行中书省（行省），是省级行政区的雏形。"
@@ -2549,7 +2549,7 @@
       "id": 71,
       "lessonId": 16,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "北宋时期发明活字印刷术的是？",
       "options": [
         "蔡伦",
@@ -2564,7 +2564,7 @@
       "id": 72,
       "lessonId": 16,
       "type": "fill",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "元代最优秀的剧作家是关汉卿，其代表作是《___》。",
       "answer": "窦娥冤",
       "explanation": "关汉卿是元代最优秀的剧作家，《窦娥冤》是他的代表作。"
@@ -2573,7 +2573,7 @@
       "id": 73,
       "lessonId": 17,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "明朝建立者是？",
       "options": [
         "刘邦",
@@ -2588,7 +2588,7 @@
       "id": 74,
       "lessonId": 17,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "郑和下西洋最远到达___东海岸和红海沿岸。",
       "answer": "非洲",
       "explanation": "郑和七下西洋（1405—1433年），最远到达非洲东海岸和红海沿岸，是世界航海史上的壮举。"
@@ -2597,16 +2597,16 @@
       "id": 75,
       "lessonId": 17,
       "type": "judge",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "明朝为加强皇权，朱元璋废除了丞相制度。",
-      "answer": 0,
+      "answer": false,
       "explanation": "正确。朱元璋废除丞相制度和中书省，六部直接对皇帝负责。"
     },
     {
       "id": 76,
       "lessonId": 18,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "标志着我国封建君主专制达到顶峰的是？",
       "options": [
         "废丞相",
@@ -2621,7 +2621,7 @@
       "id": 77,
       "lessonId": 18,
       "type": "fill",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "清朝前期实行___政策，严格限制对外贸易，只开放广州一处。",
       "answer": "闭关锁国",
       "explanation": "闭关锁国政策导致中国与世界隔绝，逐渐落伍于世界潮流。"
@@ -2630,7 +2630,7 @@
       "id": 78,
       "lessonId": 19,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "虎门销烟的领导人是？",
       "options": [
         "曾国藩",
@@ -2645,7 +2645,7 @@
       "id": 79,
       "lessonId": 19,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "《南京条约》规定割让___给英国。",
       "answer": "香港岛",
       "explanation": "《南京条约》规定割让香港岛给英国，这是中国领土主权被破坏的开始。"
@@ -2654,16 +2654,16 @@
       "id": 80,
       "lessonId": 19,
       "type": "judge",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "鸦片战争是中国近代史的开端。",
-      "answer": 0,
+      "answer": false,
       "explanation": "正确。鸦片战争改变了中国历史发展进程，中国开始从封建社会变为半殖民地半封建社会。"
     },
     {
       "id": 81,
       "lessonId": 20,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "1860年火烧圆明园的是？",
       "options": [
         "八国联军",
@@ -2678,7 +2678,7 @@
       "id": 82,
       "lessonId": 20,
       "type": "fill",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "1851年，洪秀全在广西___村发动起义，建立太平天国。",
       "answer": "金田",
       "explanation": "1851年，洪秀全在广西金田村发动起义，史称金田起义。"
@@ -2687,7 +2687,7 @@
       "id": 83,
       "lessonId": 21,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "洋务运动前期以什么为口号创办军事工业？",
       "options": [
         "求富",
@@ -2702,7 +2702,7 @@
       "id": 84,
       "lessonId": 21,
       "type": "choice",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "戊戌变法中被害的六人被称为？",
       "options": [
         "维新六杰",
@@ -2717,7 +2717,7 @@
       "id": 85,
       "lessonId": 22,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "辛亥革命爆发于哪一年？",
       "options": [
         "1910年",
@@ -2732,7 +2732,7 @@
       "id": 86,
       "lessonId": 22,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "孙中山将同盟会的革命纲领阐发为\"___\"\"民权\"\"民生\"三大主义。",
       "answer": "民族",
       "explanation": "三民主义包括民族主义、民权主义和民生主义。"
@@ -2741,7 +2741,7 @@
       "id": 87,
       "lessonId": 23,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "五四运动爆发时学生提出的口号是？",
       "options": [
         "\"自强求富\"",
@@ -2756,7 +2756,7 @@
       "id": 88,
       "lessonId": 23,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "1921年7月，中国共产党第一次全国代表大会在___召开。",
       "answer": "上海",
       "explanation": "中共一大最初在上海召开，后转移到浙江嘉兴南湖的游船上。"
@@ -2765,7 +2765,7 @@
       "id": 89,
       "lessonId": 24,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "打响了武装反抗国民党反动派第一枪的是？",
       "options": [
         "武昌起义",
@@ -2780,7 +2780,7 @@
       "id": 90,
       "lessonId": 24,
       "type": "fill",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "1935年1月召开的___会议，确立了毛泽东的领导地位。",
       "answer": "遵义",
       "explanation": "遵义会议是中国共产党历史上一个生死攸关的转折点。"
@@ -2789,7 +2789,7 @@
       "id": 91,
       "lessonId": 25,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "中华人民共和国成立是在哪一天？",
       "options": [
         "1949年9月1日",
@@ -2804,7 +2804,7 @@
       "id": 92,
       "lessonId": 25,
       "type": "choice",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "抗美援朝战争中舍身堵枪眼的英雄是？",
       "options": [
         "董存瑞",
@@ -2819,16 +2819,16 @@
       "id": 93,
       "lessonId": 25,
       "type": "judge",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "土地改革废除了封建土地所有制，实行农民土地所有制。",
-      "answer": 0,
+      "answer": false,
       "explanation": "正确。土地改革彻底摧毁了我国存在两千多年的封建土地制度。"
     },
     {
       "id": 94,
       "lessonId": 26,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "作出改革开放历史性决策的会议是？",
       "options": [
         "中共八大",
@@ -2843,7 +2843,7 @@
       "id": 95,
       "lessonId": 26,
       "type": "fill",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "改革首先在农村取得突破，安徽凤阳___村农民率先实行包干到户。",
       "answer": "小岗",
       "explanation": "小岗村农民率先实行包干到户，成为农村改革的先行者。"
@@ -2852,7 +2852,7 @@
       "id": 96,
       "lessonId": 26,
       "type": "choice",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "1980年设立的经济特区不包括？",
       "options": [
         "深圳",
@@ -2867,7 +2867,7 @@
       "id": 97,
       "lessonId": 27,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "古埃及文明的象征是？",
       "options": [
         "空中花园",
@@ -2882,7 +2882,7 @@
       "id": 98,
       "lessonId": 27,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "古埃及文明发源于___河流域。",
       "answer": "尼罗",
       "explanation": "古埃及文明发源于尼罗河流域，尼罗河被称为埃及的\"母亲河\"。"
@@ -2891,7 +2891,7 @@
       "id": 99,
       "lessonId": 28,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "世界上第一部较为完整的成文法典是？",
       "options": [
         "《十二铜表法》",
@@ -2906,7 +2906,7 @@
       "id": 100,
       "lessonId": 28,
       "type": "choice",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "古印度种姓制度中祭司属于哪个等级？",
       "options": [
         "刹帝利",
@@ -2921,7 +2921,7 @@
       "id": 101,
       "lessonId": 29,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "雅典民主政治发展到高峰是在谁主政时期？",
       "options": [
         "梭伦",
@@ -2936,7 +2936,7 @@
       "id": 102,
       "lessonId": 29,
       "type": "fill",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "亚历山大东征建立了一个地跨___亚非三洲的大帝国。",
       "answer": "欧",
       "explanation": "亚历山大帝国版图横跨欧洲、亚洲和非洲，促进了东西方文化交流。"
@@ -2945,7 +2945,7 @@
       "id": 103,
       "lessonId": 30,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "罗马帝国的建立者是？",
       "options": [
         "凯撒",
@@ -2960,16 +2960,16 @@
       "id": 104,
       "lessonId": 30,
       "type": "judge",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "《十二铜表法》是罗马法制建设的第一步。",
-      "answer": 0,
+      "answer": false,
       "explanation": "正确。《十二铜表法》使量刑定罪有了文字依据，限制了贵族对法律的垄断。"
     },
     {
       "id": 105,
       "lessonId": 31,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "拜占庭帝国（东罗马帝国）的都城是？",
       "options": [
         "罗马",
@@ -2984,7 +2984,7 @@
       "id": 106,
       "lessonId": 31,
       "type": "fill",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "查士丁尼组织编撰的《___》奠定了欧洲民法的基础。",
       "answer": "查士丁尼法典",
       "explanation": "查士丁尼统治时期编撰的法典，是欧洲历史上第一部系统完备的法典。"
@@ -2993,7 +2993,7 @@
       "id": 107,
       "lessonId": 32,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "文艺复兴的核心思想是？",
       "options": [
         "理性主义",
@@ -3008,7 +3008,7 @@
       "id": 108,
       "lessonId": 32,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "达·芬奇的代表作有《___》和《最后的晚餐》。",
       "answer": "蒙娜丽莎",
       "explanation": "达·芬奇是意大利文艺复兴时期的艺术大师，《蒙娜丽莎》是他最著名的作品之一。"
@@ -3017,7 +3017,7 @@
       "id": 109,
       "lessonId": 33,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "1492年\"发现\"美洲大陆的是？",
       "options": [
         "迪亚士",
@@ -3032,7 +3032,7 @@
       "id": 110,
       "lessonId": 33,
       "type": "choice",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "完成人类史上第一次环球航行的是谁的船队？",
       "options": [
         "迪亚士",
@@ -3047,7 +3047,7 @@
       "id": 111,
       "lessonId": 34,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "英国君主立宪制确立的标志是？",
       "options": [
         "《大宪章》",
@@ -3062,16 +3062,16 @@
       "id": 112,
       "lessonId": 34,
       "type": "judge",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "英国资产阶级革命中，查理一世被送上断头台。",
-      "answer": 0,
+      "answer": false,
       "explanation": "正确。1649年，查理一世被处死，英国宣布成立共和国。"
     },
     {
       "id": 113,
       "lessonId": 35,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "《独立宣言》的起草者是？",
       "options": [
         "华盛顿",
@@ -3086,7 +3086,7 @@
       "id": 114,
       "lessonId": 35,
       "type": "fill",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "美国1787年宪法确立了___权分立的原则。",
       "answer": "三",
       "explanation": "1787年宪法确立了三权分立：行政权（总统）、立法权（国会）、司法权（最高法院）相互制衡。"
@@ -3095,7 +3095,7 @@
       "id": 115,
       "lessonId": 36,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "法国大革命爆发的标志是？",
       "options": [
         "来克星顿枪声",
@@ -3110,7 +3110,7 @@
       "id": 116,
       "lessonId": 36,
       "type": "fill",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "拿破仑颁布的《___》巩固了法国大革命的成果。",
       "answer": "拿破仑法典",
       "explanation": "《拿破仑法典》体现了自由平等和私有财产不可侵犯的原则，成为许多国家民法的参照蓝本。"
@@ -3119,7 +3119,7 @@
       "id": 117,
       "lessonId": 37,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "瓦特改进的蒸汽机使人类进入什么时代？",
       "options": [
         "电气时代",
@@ -3134,16 +3134,16 @@
       "id": 118,
       "lessonId": 37,
       "type": "judge",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "爱迪生发明了白炽灯泡，是第二次工业革命的重要成果。",
-      "answer": 0,
+      "answer": false,
       "explanation": "正确。电力的广泛使用是第二次工业革命的显著特征，爱迪生是重要的发明家。"
     },
     {
       "id": 119,
       "lessonId": 38,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "第一次世界大战的导火线是？",
       "options": [
         "珍珠港事件",
@@ -3158,7 +3158,7 @@
       "id": 120,
       "lessonId": 38,
       "type": "choice",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "一战中最残酷的被称为\"绞肉机\"的战役是？",
       "options": [
         "索姆河战役",
@@ -3173,7 +3173,7 @@
       "id": 121,
       "lessonId": 39,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "第二次世界大战全面爆发的标志是？",
       "options": [
         "日本偷袭珍珠港",
@@ -3188,7 +3188,7 @@
       "id": 122,
       "lessonId": 39,
       "type": "fill",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "1942—1943年的___战役是第二次世界大战的转折点。",
       "answer": "斯大林格勒",
       "explanation": "斯大林格勒战役的胜利是苏德战场的转折点，也是整个二战的转折点。"
@@ -3197,7 +3197,7 @@
       "id": 123,
       "lessonId": 40,
       "type": "choice",
-      "difficulty": 1,
+      "difficulty": "easy",
       "stem": "冷战开始的标志是？",
       "options": [
         "北约成立",
@@ -3212,10 +3212,308 @@
       "id": 124,
       "lessonId": 40,
       "type": "fill",
-      "difficulty": 2,
+      "difficulty": "medium",
       "stem": "___年苏联解体，冷战结束，世界格局向多极化方向发展。",
       "answer": "1991",
       "explanation": "1991年苏联解体，标志着冷战结束，两极格局瓦解。"
+    },
+    {
+      "id": 201,
+      "lessonId": 1,
+      "type": "material",
+      "difficulty": "medium",
+      "sourceMaterial": "在北京人遗址中，发现了大量灰烬层，最厚处达6米。灰烬中有烧过的石块、兽骨和朴树籽等。",
+      "sourceAttribution": "中国考古学年鉴",
+      "stem": "根据上述史料，说明北京人已经掌握了什么技能？这一技能对早期人类有什么重要意义？",
+      "answer": "北京人已经学会使用火，并能保存火种。火的使用可以：①烧烤食物（使食物易于消化吸收）；②取暖御寒；③驱赶野兽；④照明。火的使用改善了生存条件，是人类进化史上的里程碑。",
+      "keywords": [
+        "使用火",
+        "保存火种",
+        "烧烤食物",
+        "取暖",
+        "驱赶野兽",
+        "照明"
+      ],
+      "explanation": "北京人遗址中厚厚的灰烬层证明北京人已学会使用火并长时间保存火种。火的使用是人类进化史上的重要里程碑，极大改善了人类的生存条件。"
+    },
+    {
+      "id": 202,
+      "lessonId": 1,
+      "type": "material",
+      "difficulty": "medium",
+      "sourceMaterial": "在北京人遗址中，出土了数以万计的石器。这些石器多为打制而成，有砍砸器、刮削器、尖状器等不同类型，但未见磨制石器。",
+      "sourceAttribution": "中国旧石器时代考古",
+      "stem": "根据上述史料，指出北京人使用的石器有什么特点？这些石器属于什么类型？",
+      "answer": "北京人的石器是打制石器（旧石器），使用打制方法制成，类型多样（砍砸器、刮削器、尖状器等）。属于旧石器时代。",
+      "keywords": [
+        "打制石器",
+        "旧石器",
+        "旧石器时代",
+        "类型多样"
+      ],
+      "explanation": "北京人使用打制石器，属于旧石器时代。他们能根据用途制作不同类型的石器，说明已具备一定的劳动技能。"
+    },
+    {
+      "id": 203,
+      "lessonId": 2,
+      "type": "material",
+      "difficulty": "medium",
+      "sourceMaterial": "在河姆渡遗址中，发现了大量人工栽培水稻的遗存，其中堆积的稻谷、稻壳、稻秆等遗物，最厚处超过1米。遗址中还出土了骨耜等翻土工具。",
+      "sourceAttribution": "河姆渡遗址发掘报告",
+      "stem": "上述史料反映了河姆渡原始居民怎样的生产生活状况？结合所学知识分析其历史意义。",
+      "answer": "①河姆渡原始居民已经会种植水稻（原始农业出现）；②使用骨耜等翻土工具；③原始农业的出现使人类从采集狩猎转为定居生活，是生产力发展的重要标志。",
+      "keywords": [
+        "种植水稻",
+        "原始农业",
+        "翻土工具",
+        "定居生活"
+      ],
+      "explanation": "河姆渡遗址的大量稻谷遗存证明长江流域是世界上最早种植水稻的地区之一。原始农业的出现促使人类从迁徙走向定居。"
+    },
+    {
+      "id": 204,
+      "lessonId": 3,
+      "type": "material",
+      "difficulty": "medium",
+      "sourceMaterial": "「轩辕之时，神农氏世衰。诸侯相侵伐，暴虐百姓，而神农氏弗能征。于是轩辕乃习用干戈，以征不享，诸侯咸来宾从。」",
+      "sourceAttribution": "史记·五帝本纪",
+      "stem": "阅读上述史料，「轩辕」指的是谁？结合材料分析他为什么能得到各部落的拥戴？",
+      "answer": "①「轩辕」指的是黄帝；②因为神农氏衰落后，各部落互相攻伐，百姓受害。黄帝训练军队，征伐不服从的部落，维护了秩序，因此得到拥戴。",
+      "keywords": [
+        "黄帝",
+        "征伐",
+        "维护秩序",
+        "部落拥戴"
+      ],
+      "explanation": "黄帝是华夏族的祖先之一，被尊为「人文初祖」。他通过战争统一各部，奠定了华夏文明的基础。"
+    },
+    {
+      "id": 205,
+      "lessonId": 4,
+      "type": "material",
+      "difficulty": "medium",
+      "sourceMaterial": "「大道之行也，天下为公。选贤与能，讲信修睦。」",
+      "sourceAttribution": "礼记·礼运",
+      "stem": "上述史料描述的是我国古代哪种制度？结合所学知识说明这一制度的特点。",
+      "answer": "禅让制。特点：①将部落联盟首领之位传给贤德之人（选贤与能）；②传位标准是德行和才能而非血缘关系；③体现了「天下为公」的理想。",
+      "keywords": [
+        "禅让制",
+        "选贤与能",
+        "天下为公",
+        "贤德"
+      ],
+      "explanation": "禅让制是原始社会末期民主推选首领的制度。尧传舜，舜传禹，都是因为继任者贤德能干。禹死后，其子启继位，禅让制被世袭制取代。"
+    },
+    {
+      "id": 206,
+      "lessonId": 5,
+      "type": "material",
+      "difficulty": "medium",
+      "sourceMaterial": "「（纣）以酒为池，县（悬）肉为林，使男女倮（裸）相逐其间，为长夜之饮。」",
+      "sourceAttribution": "史记·殷本纪",
+      "stem": "上述史料描述的是哪位君主？结合所学知识，分析其统治对商朝产生了什么影响？",
+      "answer": "描述的是商纣王。影响：①纣王的暴政（酒池肉林）使社会矛盾激化；②失去民心，导致商朝被周武王联合诸侯灭亡（牧野之战）。",
+      "keywords": [
+        "商纣王",
+        "暴政",
+        "失去民心",
+        "灭亡"
+      ],
+      "explanation": "商纣王是商朝最后一位君主，以暴虐奢侈著称。公元前1046年，周武王率军在牧野之战中击败商军，建立周朝。"
+    },
+    {
+      "id": 207,
+      "lessonId": 8,
+      "type": "material",
+      "difficulty": "medium",
+      "sourceMaterial": "「秦王扫六合，虎视何雄哉！挥剑决浮云，诸侯尽西来。」",
+      "sourceAttribution": "李白·古风",
+      "stem": "该诗描述的是哪位历史人物的什么功绩？这一功绩有什么历史意义？",
+      "answer": "描述秦始皇（嬴政）统一六国的功绩。意义：①结束了春秋战国以来长期分裂割据的局面；②建立了中国历史上第一个统一的多民族的中央集权封建国家；③为统一多民族国家的发展奠定了基础。",
+      "keywords": [
+        "秦始皇",
+        "统一六国",
+        "中央集权",
+        "统一的多民族国家"
+      ],
+      "explanation": "公元前230年至前221年，秦国先后灭掉韩、赵、魏、楚、燕、齐六国，完成了统一，建立了秦朝。"
+    },
+    {
+      "id": 208,
+      "lessonId": 8,
+      "type": "material",
+      "difficulty": "medium",
+      "sourceMaterial": "「一法度衡石丈尺。车同轨。书同文字。」",
+      "sourceAttribution": "史记·秦始皇本纪",
+      "stem": "上述史料反映了秦始皇的哪些统一措施？这些措施有什么共同作用？",
+      "answer": "反映的措施：①统一度量衡（一法度衡石丈尺）；②统一车轨（车同轨）；③统一文字（书同文字）。共同作用：有利于经济文化交流和国家统一，巩固了中央集权。",
+      "keywords": [
+        "统一度量衡",
+        "统一车轨",
+        "统一文字",
+        "巩固统一"
+      ],
+      "explanation": "秦始皇推行了一系列巩固统一的措施：统一度量衡便利了经济交流，统一车轨便利了交通，统一文字（小篆）便利了文化传播和政令推行。"
+    },
+    {
+      "id": 209,
+      "lessonId": 12,
+      "type": "material",
+      "difficulty": "medium",
+      "sourceMaterial": "「自古皆贵中华，贱夷狄，朕独爱之如一。」",
+      "sourceAttribution": "资治通鉴·唐纪",
+      "stem": "「朕」指的是哪位皇帝？这句话体现了他怎样的民族政策？这种政策产生了什么影响？",
+      "answer": "①「朕」指唐太宗（李世民）；②体现了他开明的民族政策（对各民族一视同仁）；③影响：促进了民族交融，北方各族尊称他为「天可汗」，唐朝与周边各族关系融洽。",
+      "keywords": [
+        "唐太宗",
+        "开明",
+        "民族政策",
+        "天可汗"
+      ],
+      "explanation": "唐太宗实行开明的民族政策，被北方各族尊为「天可汗」。这种政策促进了民族团结和交融，是唐朝强盛的重要原因之一。"
+    },
+    {
+      "id": 210,
+      "lessonId": 14,
+      "type": "material",
+      "difficulty": "medium",
+      "sourceMaterial": "「苏湖熟，天下足。」",
+      "sourceAttribution": "宋代谚语",
+      "stem": "上述谚语反映了什么经济现象？结合所学知识分析其出现的原因。",
+      "answer": "①反映了宋代南方农业发达，太湖流域（苏州、湖州）成为全国重要的粮仓；②原因：经济重心南移完成；南方自然条件优越；水稻种植技术提高（引进占城稻）。",
+      "keywords": [
+        "南方农业发达",
+        "太湖流域",
+        "经济重心南移",
+        "粮仓"
+      ],
+      "explanation": "「苏湖熟，天下足」说明南宋时期太湖流域的苏州、湖州一带粮食产量极高，南方的经济地位已超过北方，经济重心南移最终完成。"
+    },
+    {
+      "id": 211,
+      "lessonId": 1,
+      "type": "fill",
+      "difficulty": "medium",
+      "stem": "目前已确认的中国境内最早的古人类是____，距今约____万年。",
+      "options": [],
+      "answer": [
+        "元谋人",
+        "170"
+      ],
+      "explanation": "元谋人是我国境内目前已确认的最早的古人类，距今约170万年，发现于云南省元谋县。"
+    },
+    {
+      "id": 212,
+      "lessonId": 1,
+      "type": "fill",
+      "difficulty": "medium",
+      "stem": "北京人使用____石器，生活在距今约____万至____万年前。",
+      "options": [],
+      "answer": [
+        "打制",
+        "70",
+        "20"
+      ],
+      "explanation": "北京人使用打制石器（旧石器），生活在距今约70万至20万年前的北京西南周口店龙骨山上。"
+    },
+    {
+      "id": 213,
+      "lessonId": 4,
+      "type": "fill",
+      "difficulty": "easy",
+      "stem": "约公元前____年，禹建立____王朝，这是中国历史上第一个王朝。",
+      "options": [],
+      "answer": [
+        "2070",
+        "夏"
+      ],
+      "explanation": "约公元前2070年，禹建立夏朝，定都阳城。夏朝是中国历史上第一个王朝，标志着原始社会的结束。"
+    },
+    {
+      "id": 214,
+      "lessonId": 5,
+      "type": "fill",
+      "difficulty": "medium",
+      "stem": "迄今世界上出土最重的青铜器是____。",
+      "options": [],
+      "answer": "司母戊鼎",
+      "explanation": "司母戊鼎（又称后母戊鼎）重832.84千克，是商朝青铜器的代表作，反映了商朝高超的青铜铸造技术。"
+    },
+    {
+      "id": 215,
+      "lessonId": 6,
+      "type": "fill",
+      "difficulty": "easy",
+      "stem": "春秋时期，____（人名）提出「仁」的学说，主张「为政以德」。",
+      "options": [],
+      "answer": "孔子",
+      "explanation": "孔子是儒家学派创始人，核心思想是「仁」，主张以德治国，反对苛政。他的思想记录在《论语》中。"
+    },
+    {
+      "id": 216,
+      "lessonId": 7,
+      "type": "fill",
+      "difficulty": "medium",
+      "stem": "公元前____年，秦国完成统一大业，建立秦朝，定都____。",
+      "options": [],
+      "answer": [
+        "221",
+        "咸阳"
+      ],
+      "explanation": "公元前221年，秦王嬴政统一六国，定都咸阳，建立秦朝。嬴政自称「始皇帝」。"
+    },
+    {
+      "id": 217,
+      "lessonId": 10,
+      "type": "fill",
+      "difficulty": "medium",
+      "stem": "西汉时期，____（人名）出使西域，开辟了通往中亚、西亚的道路，为____的开通奠定了基础。",
+      "options": [],
+      "answer": [
+        "张骞",
+        "丝绸之路"
+      ],
+      "explanation": "公元前138年和公元前119年，汉武帝派张骞两次出使西域，开辟了通往西域的道路，为丝绸之路奠定了基础。"
+    },
+    {
+      "id": 218,
+      "lessonId": 11,
+      "type": "fill",
+      "difficulty": "hard",
+      "stem": "北魏____帝推行汉化改革，迁都____，改汉姓、穿汉服、说汉语、与汉族通婚。",
+      "options": [],
+      "answer": [
+        "孝文",
+        "洛阳"
+      ],
+      "explanation": "北魏孝文帝推行全面汉化改革：迁都洛阳、改鲜卑姓为汉姓（拓跋→元）、穿汉服、说汉语、鼓励与汉族通婚，促进了民族大交融。"
+    },
+    {
+      "id": 219,
+      "lessonId": 16,
+      "type": "fill",
+      "difficulty": "medium",
+      "stem": "1405-1433年，____先后七次下西洋，最远到达____和____。",
+      "options": [],
+      "answer": [
+        "郑和",
+        "非洲东海岸",
+        "红海沿岸"
+      ],
+      "explanation": "郑和七下西洋是世界航海史上的壮举，比欧洲航海家开辟新航路早半个多世纪。体现明朝前期国力的强盛。"
+    },
+    {
+      "id": 220,
+      "lessonId": 22,
+      "type": "fill",
+      "difficulty": "medium",
+      "stem": "1840-1842年的____战争是中国近代史的开端。战后签订的《____》是中国近代第一个不平等条约。",
+      "options": [],
+      "answer": [
+        "鸦片",
+        "南京条约"
+      ],
+      "explanation": "1840年英国发动鸦片战争，1842年签订《南京条约》（割香港岛、赔款2100万银元、开放五口通商），中国开始沦为半殖民地半封建社。"
     }
   ]
 }

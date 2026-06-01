@@ -4,15 +4,36 @@
 
 .topBar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 16px;
   margin-bottom: 24px;
+}
+
+.exitBtn {
+  padding: 6px 14px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.exitBtn:hover {
+  border-color: var(--danger);
+  color: var(--danger);
+  background: var(--danger-light);
 }
 
 .progress {
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--primary);
+  flex: 1;
+  text-align: center;
 }
 
 .type {
@@ -299,6 +320,113 @@
 
 .assessWrongBtn:hover {
   background: var(--danger-light);
+}
+
+/* ===== Source Material Card ===== */
+.sourceCard {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  border: 2px solid #f59e0b;
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+
+.sourceLabel {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #92400e;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.sourceText {
+  font-size: 1rem;
+  line-height: 2;
+  color: #78350f;
+  font-family: 'Noto Serif SC', 'STSong', 'SimSun', serif;
+  text-indent: 2em;
+}
+
+.sourceAttr {
+  margin-top: 12px;
+  text-align: right;
+  font-size: 0.85rem;
+  color: #a16207;
+  letter-spacing: 1px;
+}
+
+/* ===== Question Image ===== */
+.questionImage {
+  margin-bottom: 20px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+/* ===== Keyword Matching ===== */
+.keywordResult {
+  margin-top: 16px;
+  padding: 16px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.kwHeader {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.kwList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.kwTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.kwHit {
+  background: var(--success-light);
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+.kwMiss {
+  background: var(--danger-light);
+  color: var(--danger);
+  border: 1px solid var(--danger);
+}
+
+.kwScore {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ===== Explanation Source ===== */
+.expSource {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ===== Self Assess Hint ===== */
+.selfAssessHint {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
 }
 
 .loading {

@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import { fetchGrades, fetchUnits, fetchLessons } from '../../api';
 import { getProgressStats } from '../../utils/progress';
 import { useAccount } from '../../context/AccountContext';
+import { useSubject } from '../../context/SubjectContext';
 import ProgressBar from '../../components/ProgressBar/ProgressBar';
 import styles from './Home.module.css';
 
 export default function Home() {
   const { activeAccount } = useAccount();
+  const { subject, currentSubject } = useSubject();
   const [grades, setGrades] = useState([]);
   const [totalLessons, setTotalLessons] = useState(0);
   const [completedCount, setCompletedCount] = useState(0);
@@ -16,20 +18,20 @@ export default function Home() {
 
   useEffect(() => {
     const load = async () => {
-      const gradesData = await fetchGrades();
+      const gradesData = await fetchGrades(subject);
       setGrades(gradesData.sort((a, b) => a.order - b.order));
 
       let total = 0;
       for (const g of gradesData) {
-        const units = await fetchUnits(g.id);
+        const units = await fetchUnits(g.id, subject);
         for (const u of units) {
-          const lessons = await fetchLessons(u.id);
+          const lessons = await fetchLessons(u.id, subject);
           total += lessons.length;
         }
       }
       setTotalLessons(total);
 
-      const stats = getProgressStats(activeAccount?.id);
+      const stats = getProgressStats(activeAccount?.id, subject);
       setCompletedCount(stats.completedLessons.length);
       setQuizCount(stats.quizHistory.length);
       if (stats.quizHistory.length > 0) {
@@ -37,14 +39,14 @@ export default function Home() {
       }
     };
     load();
-  }, []);
+  }, [subject, activeAccount?.id]);
 
   const completionPct = totalLessons > 0 ? Math.round((completedCount / totalLessons) * 100) : 0;
 
   return (
     <div className={styles.home}>
-      <h1 className={styles.greeting}>欢迎来到历史学习平台</h1>
-      <p className={styles.subtitle}>系统学习初中历史，掌握每一个重要知识点</p>
+      <h1 className={styles.greeting}>欢迎来到{currentSubject.name}学习平台</h1>
+      <p className={styles.subtitle}>系统学习初中{currentSubject.name}，掌握每一个重要知识点</p>
 
       <div className={styles.statsRow}>
         <div className={styles.statCard}>

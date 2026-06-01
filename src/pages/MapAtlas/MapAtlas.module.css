@@ -1,0 +1,75 @@
+.page {
+  max-width: 1100px;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  font-size: 0.95rem;
+}
+
+.chapter {
+  margin-bottom: 40px;
+}
+
+.chapterHeader {
+  border-left: 4px solid var(--primary);
+  padding-left: 16px;
+  margin-bottom: 20px;
+}
+
+.gradeName {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.unitName {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.imageCard {
+  position: relative;
+}
+
+.lessonTag {
+  margin-top: 4px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding: 0 4px;
+  font-style: italic;
+}
+
+.loading {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 60px 0;
+  font-size: 1.1rem;
+}
+
+.empty {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 60px 0;
+}
+
+@media (max-width: 768px) {
+  .imageGrid {
+    grid-template-columns: 1fr;
+  }
+}

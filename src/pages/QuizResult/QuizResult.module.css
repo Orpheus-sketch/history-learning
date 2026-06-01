@@ -187,3 +187,99 @@
   margin: 4px 0 10px;
   line-height: 1.7;
 }
+
+/* ===== Source Material in Result ===== */
+.sourceCard {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  border: 1px solid #f59e0b;
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+}
+
+.sourceLabel {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #92400e;
+  margin-bottom: 8px;
+}
+
+.sourceText {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #78350f;
+  font-family: 'Noto Serif SC', 'STSong', 'SimSun', serif;
+  text-indent: 2em;
+}
+
+.sourceAttr {
+  margin-top: 8px;
+  text-align: right;
+  font-size: 0.8rem;
+  color: #a16207;
+}
+
+/* ===== Review Image ===== */
+.reviewImage {
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ===== Keyword Result ===== */
+.kwResult {
+  margin-top: 12px;
+  padding: 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.kwHeader {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.kwTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.kwTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px 10px;
+  border-radius: 14px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.kwHit {
+  background: var(--success-light);
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+.kwMiss {
+  background: var(--danger-light);
+  color: var(--danger);
+  border: 1px solid var(--danger);
+}
+
+.kwScoreText {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ===== Review Source Attribution ===== */
+.reviewSource {
+  margin-top: 4px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
+}

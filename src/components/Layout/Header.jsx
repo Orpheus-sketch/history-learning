@@ -1,20 +1,35 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAccount } from '../../context/AccountContext';
+import { useSubject } from '../../context/SubjectContext';
 import styles from './Header.module.css';
-
-const navItems = [
-  { path: '/home', label: '首页', icon: '📖' },
-  { path: '/knowledge', label: '知识学习', icon: '📚' },
-  { path: '/timeline', label: '时间线', icon: '⏳' },
-  { path: '/quiz', label: '习题练习', icon: '✏️' },
-  { path: '/progress', label: '学习进度', icon: '📊' },
-];
 
 export default function Header() {
   const { activeAccount, accounts, switchAccount, logout } = useAccount();
+  const { subject, currentSubject, setSubject, subjects } = useSubject();
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
+
+  const navItems = useMemo(() => {
+    const items = [
+      { path: '/home', label: '首页', icon: '📖' },
+      { path: '/knowledge', label: '知识学习', icon: '📚' },
+    ];
+    if (subject === 'history') {
+      items.push({ path: '/timeline', label: '时间线', icon: '⏳' });
+    }
+    if (subject === 'geography') {
+      items.push({ path: '/atlas/map', label: '地图册', icon: '🗺️' });
+    }
+    if (subject === 'biology') {
+      items.push({ path: '/atlas/bio', label: '生物图谱', icon: '🔬' });
+    }
+    items.push(
+      { path: '/quiz', label: '习题练习', icon: '✏️' },
+      { path: '/progress', label: '学习进度', icon: '📊' },
+    );
+    return items;
+  }, [subject]);
 
   const handleSwitch = (id) => {
     switchAccount(id);
@@ -24,14 +39,27 @@ export default function Header() {
   const handleLogout = () => {
     logout();
     setMenuOpen(false);
-    navigate('/account');
+    navigate('/');
   };
 
   return (
     <header className={styles.header}>
       <div className={styles.brand}>
-        <span className={styles.logo}>🏛️</span>
-        <span className={styles.title}>历史学习</span>
+        <span className={styles.logo}>{currentSubject.icon}</span>
+        <span className={styles.title}>{currentSubject.name}学习</span>
+      </div>
+      <div className={styles.subjectTabs}>
+        {subjects.map((s) => (
+          <button
+            key={s.id}
+            className={`${styles.subjectTab} ${s.id === subject ? styles.subjectTabActive : ''}`}
+            onClick={() => setSubject(s.id)}
+            title={`切换到${s.name}`}
+          >
+            <span className={styles.subjectTabIcon}>{s.icon}</span>
+            <span className={styles.subjectTabName}>{s.name}</span>
+          </button>
+        ))}
       </div>
       <nav className={styles.nav}>
         {navItems.map((item) => (
@@ -87,7 +115,7 @@ export default function Header() {
                   ))}
                   <button
                     className={styles.menuItem}
-                    onClick={() => { setMenuOpen(false); navigate('/account'); }}
+                    onClick={() => { setMenuOpen(false); navigate('/'); }}
                   >
                     <span>+</span>
                     <span>管理賬戶</span>

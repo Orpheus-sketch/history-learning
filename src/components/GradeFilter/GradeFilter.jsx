@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import { fetchGrades } from '../../api';
+import { useSubject } from '../../context/SubjectContext';
 import styles from './GradeFilter.module.css';
 
 export default function GradeFilter({ value, onChange }) {
+  const { subject } = useSubject();
   const [grades, setGrades] = useState([]);
-  useEffect(() => { fetchGrades().then(setGrades); }, []);
+  useEffect(() => { fetchGrades(subject).then(setGrades); }, [subject]);
 
   return (
     <div className={styles.filter}>
