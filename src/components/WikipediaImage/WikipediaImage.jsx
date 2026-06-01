@@ -35,6 +35,13 @@ export function preloadImages(images, lang = 'zh') {
   });
 }
 
+// Proxy Wikipedia image URLs for China accessibility
+function proxyImageUrl(originalUrl) {
+  if (!originalUrl) return null;
+  // Use weserv image proxy - works in China
+  return `https://images.weserv.nl/?url=${encodeURIComponent(originalUrl)}&default=1`;
+}
+
 async function fetchWikiImage(keyword, lang = 'zh', fallbackKeyword) {
   const cacheKey = `${lang}:${keyword}`;
   if (cache[cacheKey] !== undefined) return cache[cacheKey];
@@ -42,33 +49,47 @@ async function fetchWikiImage(keyword, lang = 'zh', fallbackKeyword) {
   // Deduplicate concurrent requests
   if (pendingRequests[cacheKey]) return pendingRequests[cacheKey];
 
+  // Multiple API endpoints to try (for China accessibility)
+  const API_ENDPOINTS = (language) => [
+    `https://${language}.wikipedia.org/w/api.php?action=query&titles=__KW__&prop=pageimages&format=json&pithumbsize=800&origin=*`,
+    `https://en.wikipedia.org/w/api.php?action=query&titles=__KW__&prop=pageimages&format=json&pithumbsize=800&origin=*`,
+    `https://wiki.archlinux.org/title/__KW__`,  // dummy fallback, won't work for images
+  ];
+
   async function tryFetch(kw, language) {
     const ck = `${language}:${kw}`;
     if (cache[ck] !== undefined) return cache[ck];
 
-    const apiUrl = `https://${language}.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(kw)}&prop=pageimages&format=json&pithumbsize=800&origin=*`;
+    const endpoints = [
+      `https://${language}.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(kw)}&prop=pageimages&format=json&pithumbsize=800&origin=*`,
+      `https://en.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(kw)}&prop=pageimages&format=json&pithumbsize=800&origin=*`,
+    ];
 
-    try {
-      const response = await fetch(apiUrl);
-      const data = await response.json();
-      const pages = data.query?.pages;
-      if (pages) {
-        const page = Object.values(pages)[0];
-        const src = page?.thumbnail?.source;
-        if (src) {
-        cache[ck] = src;
-        persistCache();
-        return src;
+    for (const apiUrl of endpoints) {
+      try {
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 8000);
+        const response = await fetch(apiUrl, { signal: controller.signal });
+        clearTimeout(timeout);
+        const data = await response.json();
+        const pages = data.query?.pages;
+        if (pages) {
+          const page = Object.values(pages)[0];
+          const src = page?.thumbnail?.source;
+          if (src) {
+            cache[ck] = src;
+            persistCache();
+            return src;
+          }
+        }
+      } catch {
+        continue; // Try next endpoint
       }
-      }
-      cache[ck] = null;
-      persistCache();
-      return null;
-    } catch {
-      cache[ck] = null;
-      persistCache();
-      return null;
     }
+
+    cache[ck] = null;
+    persistCache();
+    return null;
   }
 
   const promise = (async () => {
@@ -142,17 +163,19 @@ function useWikiImage(keyword, lang = 'zh', fallbackKeyword) {
 export default function WikipediaImage({ keyword, caption, source, lang, fallbackKeyword, directUrl }) {
   // If a pre-resolved URL is provided, use it directly (no API call)
   const apiResult = useWikiImage(directUrl ? null : keyword, lang, fallbackKeyword);
-  const url = directUrl || apiResult.url;
+  const rawUrl = directUrl || apiResult.url;
   const resolved = directUrl ? true : apiResult.resolved;
+  // Proxy the image URL for China accessibility
+  const displayUrl = rawUrl ? proxyImageUrl(rawUrl) : null;
 
   return (
     <figure className={styles.figure}>
       {/* Always render the image container — just hidden until loaded */}
       <div className={styles.imgWrapper}>
-        {url ? (
+        {displayUrl ? (
           <img
             className={styles.image}
-            src={url}
+            src={displayUrl}
             alt={caption}
             loading="lazy"
             onError={(e) => {
