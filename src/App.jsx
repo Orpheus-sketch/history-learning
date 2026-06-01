@@ -18,7 +18,7 @@ import Progress from './pages/Progress/Progress';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL !== '/' ? import.meta.env.BASE_URL.replace(/\/$/, '') : undefined}>
       <Routes>
         <Route path="/" element={<SubjectSelect />} />
         <Route path="/welcome" element={<Welcome />} />
