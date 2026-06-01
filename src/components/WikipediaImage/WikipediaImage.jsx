@@ -35,10 +35,23 @@ export function preloadImages(images, lang = 'zh') {
   });
 }
 
-// Proxy Wikipedia image URLs for China accessibility
-function proxyImageUrl(originalUrl) {
+// Multiple proxy options for China accessibility
+function getImageUrl(originalUrl) {
   if (!originalUrl) return null;
-  // Use weserv image proxy - works in China
+  // Return direct URL first (fastest if accessible),
+  // the onError handler will try proxies
+  return originalUrl;
+}
+
+function getProxyUrl(originalUrl) {
+  if (!originalUrl) return null;
+  // wsrv.nl proxy - often faster
+  return `https://wsrv.nl/?url=${encodeURIComponent(originalUrl)}`;
+}
+
+function getProxyUrl2(originalUrl) {
+  if (!originalUrl) return null;
+  // images.weserv.nl fallback proxy
   return `https://images.weserv.nl/?url=${encodeURIComponent(originalUrl)}&default=1`;
 }
 
@@ -165,41 +178,55 @@ export default function WikipediaImage({ keyword, caption, source, lang, fallbac
   const apiResult = useWikiImage(directUrl ? null : keyword, lang, fallbackKeyword);
   const rawUrl = directUrl || apiResult.url;
   const resolved = directUrl ? true : apiResult.resolved;
-  // Proxy the image URL for China accessibility
-  const displayUrl = rawUrl ? proxyImageUrl(rawUrl) : null;
+  const [imgSrc, setImgSrc] = useState(null);
+  const [retryCount, setRetryCount] = useState(0);
+
+  // Set up cascade: direct -> proxy1 -> proxy2
+  useEffect(() => {
+    if (!rawUrl) {
+      setImgSrc(null);
+      return;
+    }
+    if (retryCount === 0) {
+      setImgSrc(rawUrl); // Try direct URL first
+    } else if (retryCount === 1) {
+      setImgSrc(getProxyUrl(rawUrl)); // Try wsrv.nl
+    } else if (retryCount === 2) {
+      setImgSrc(getProxyUrl2(rawUrl)); // Try weserv.nl
+    } else {
+      setImgSrc(null); // All attempts failed
+    }
+  }, [rawUrl, retryCount]);
+
+  const handleImgError = () => {
+    if (retryCount < 2) {
+      setRetryCount(c => c + 1); // Try next fallback
+    } else {
+      setImgSrc(null); // All failed, show fallback
+    }
+  };
 
   return (
     <figure className={styles.figure}>
-      {/* Always render the image container — just hidden until loaded */}
       <div className={styles.imgWrapper}>
-        {displayUrl ? (
+        {imgSrc ? (
           <img
             className={styles.image}
-            src={displayUrl}
+            src={imgSrc}
             alt={caption}
             loading="lazy"
-            onError={(e) => {
-              e.target.style.display = 'none';
-              e.target.nextSibling.style.display = 'flex';
-            }}
+            onError={handleImgError}
           />
+        ) : resolved ? (
+          <div className={`${styles.placeholder} ${styles.noImage}`}>
+            <span className={styles.fallbackIcon}>🏛️</span>
+            <span className={styles.fallbackText}>{caption || keyword}</span>
+          </div>
         ) : (
-          <div className={`${styles.placeholder} ${resolved ? styles.noImage : styles.loading}`}>
-            {!resolved ? (
-              <span className={styles.imgLoading}>图片加载中</span>
-            ) : (
-              <>
-                <span className={styles.fallbackIcon}>🏛️</span>
-                <span className={styles.fallbackText}>{caption || keyword}</span>
-              </>
-            )}
+          <div className={`${styles.placeholder} ${styles.loading}`}>
+            <span className={styles.imgLoading}>图片加载中</span>
           </div>
         )}
-        {/* Fallback when img fails */}
-        <div className={styles.fallback} style={{ display: 'none' }}>
-          <span className={styles.fallbackIcon}>🏛️</span>
-          <span className={styles.fallbackText}>{caption || keyword}</span>
-        </div>
       </div>
       <figcaption className={styles.figcaption}>
         <p className={styles.caption}>{caption}</p>
